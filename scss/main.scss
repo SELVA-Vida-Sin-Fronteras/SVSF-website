@@ -1,17 +1,17 @@
 @import "abstracts/functions";
+@import "abstracts/variables";
+
 @import "base/reset";
+@import "base/typography";
+
+@import "components/menus";
+
+@import "layouts/header";
 
 /*------------------------------\
             TESTING
 \------------------------------*/
 
-@function small($pix) {
-  @return ($pix/375 * 100vw);
-}
-
-body {
-  padding: small(24);
-}
 
 
 

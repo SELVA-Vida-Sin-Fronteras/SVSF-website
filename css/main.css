@@ -1,5 +1,8 @@
 /* convert `pixel` to `rem` */
 /*------------------------------\
+            Variables
+\------------------------------*/
+/*------------------------------\
     Normalize CSS 
 \------------------------------*/
 /* Box sizing rules */
@@ -87,9 +90,82 @@ people that prefer not to see them */
 }
 
 /*------------------------------\
+            Typography
+\------------------------------*/
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.text--large {
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+.text--medium {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.text--small {
+  font-size: 0.75rem;
+  line-height: 2.25rem;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.hamburger-menu span {
+  display: block;
+  height: 5px;
+  background-color: white;
+  margin-bottom: 5px;
+  width: 34px;
+}
+
+/*------------------------------\
+        LAYOUTS - header
+\------------------------------*/
+.header {
+  background-color: rgba(43, 43, 43, 0.8);
+  padding: 6.4vw;
+  color: white;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header .logo-container {
+  align-items: center;
+  display: flex;
+}
+
+.header .logo-container img {
+  float: left;
+  margin-right: 8px;
+  width: 42px;
+}
+
+.header .logo-container .text {
+  max-width: 10.9375rem;
+}
+
+.header .menu {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------\
             TESTING
 \------------------------------*/
-body {
-  padding: 6.4vw;
-}
 /*# sourceMappingURL=main.css.map */

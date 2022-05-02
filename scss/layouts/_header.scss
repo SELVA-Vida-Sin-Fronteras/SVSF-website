@@ -1,0 +1,37 @@
+/*------------------------------\
+        LAYOUTS - header
+\------------------------------*/
+
+.header {
+  background-color: $main-bg-clr;
+  padding: small(24);
+  color: $main-txt-clr;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .logo-container {
+    align-items: center;
+    display: flex;
+    img {
+      float: left;
+      margin-right: 8px;
+      width: 42px;
+    }
+    .text {
+      max-width: rem(175);
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
