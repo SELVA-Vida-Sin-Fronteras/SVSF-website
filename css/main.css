@@ -1,5 +1,5 @@
 /* convert `pixel` to `rem` */
-.home .action-card__link, .home .action-card__link:hover {
+.btn, .home .action-card__link, .home .action-card__link:hover {
   transition: 500ms;
 }
 
@@ -113,6 +113,13 @@ people that prefer not to see them */
   line-height: 3rem;
 }
 
+@media screen and (min-width: 1200px) {
+  .text--large {
+    font-size: 3.5rem;
+    line-height: 4.125rem;
+  }
+}
+
 .text--medium {
   font-size: 1.5rem;
   line-height: 2.25rem;
@@ -127,12 +134,57 @@ people that prefer not to see them */
   font-weight: 700;
 }
 
+@media screen and (min-width: 1200px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
 .hamburger-menu span {
   display: block;
   height: 5px;
   background-color: white;
   margin-bottom: 5px;
   width: 34px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-menu {
+    display: flex;
+  }
+}
+
+.btn {
+  display: block;
+  font-size: 1.25rem;
+  margin-right: 0.3125rem;
+  padding: 0.875rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #74ba46;
+  font-size: 1.375rem;
+  padding: 1rem 1.125rem;
+}
+
+.btn--action {
+  background-color: rgba(21, 117, 59, 0.75);
+}
+
+.btn--inert {
+  opacity: 0.50;
+}
+
+.btn--inert:hover {
+  background-color: transparent;
+  font-size: 1.25rem;
+  padding: 0.875rem 1rem;
 }
 
 /*------------------------------\
@@ -142,6 +194,12 @@ people that prefer not to see them */
   background-color: rgba(43, 43, 43, 0.8);
   padding: 6.4vw;
   color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    padding: 8.53333vw;
+  }
 }
 
 .header .container {
@@ -158,20 +216,25 @@ people that prefer not to see them */
 .header .logo-container img {
   float: left;
   margin-right: 8px;
-  width: 42px;
+  width: 2.625rem;
+}
+
+@media screen and (min-width: 600px) {
+  .header .logo-container img {
+    width: 4.5rem;
+  }
 }
 
 .header .logo-container .text {
   max-width: 10.9375rem;
 }
 
-.header .menu {
-  display: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+@media screen and (min-width: 600px) {
+  .header .logo-container .text {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    max-width: 15.625rem;
+  }
 }
 
 /*------------------------------\

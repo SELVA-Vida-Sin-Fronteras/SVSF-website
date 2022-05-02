@@ -3,6 +3,13 @@
   @return ($pix/16 * 1rem);
 }
 
+
+// scale to small size screens
 @function small($pix) {
+  @return ($pix/375 * 100vw);
+}
+
+// scale to medium size screens
+@function medium($pix) {
   @return ($pix/375 * 100vw);
 }

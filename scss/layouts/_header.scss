@@ -7,6 +7,10 @@
   padding: small(24);
   color: $main-txt-clr;
 
+  @include media-md {
+    padding: medium(32);
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -19,19 +23,23 @@
     img {
       float: left;
       margin-right: 8px;
-      width: 42px;
+      width: rem(42);
+
+      @include media-md {
+        width: rem(72);
+      }
     }
     .text {
       max-width: rem(175);
+
+      @include media-md {
+        font-size: rem(24);
+        line-height: rem(36);
+        max-width: rem(250);
+      }
     }
   }
 
-  .menu {
-    display: none;
-  }
+  
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
