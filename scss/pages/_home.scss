@@ -1,0 +1,39 @@
+/*------------------------------\
+          PAGES - Home
+\------------------------------*/
+
+.home {
+  .action-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100vw;
+    width: 100vw;
+    text-align: center;
+    &__link {
+      @extend %transition-ease;
+      display: block;
+      background-color: $btn-bg-clr;
+      padding: rem(20.5) 0;
+      text-decoration: underline;
+
+      &:hover {
+        @extend %transition-ease;
+        background-color: $highlight-clr;
+        font-size: rem(30);
+      }
+    }
+
+    &--journey {
+      background-image: url("../assets//mobile/journey.jpg");
+    }
+
+    &--blog {
+      background-image: url("../assets/mobile/blog.jpg");
+    }
+
+    &--action {
+      background-image: url("../assets/mobile/action.jpg");
+    }
+  }
+}

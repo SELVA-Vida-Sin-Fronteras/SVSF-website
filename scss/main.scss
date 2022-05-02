@@ -1,4 +1,5 @@
 @import "abstracts/functions";
+@import "abstracts/placeholders";
 @import "abstracts/variables";
 
 @import "base/reset";
@@ -8,6 +9,9 @@
 
 @import "layouts/header";
 @import "layouts/footer";
+
+@import "pages/home";
+@import "pages/global";
 
 /*------------------------------\
             TESTING
