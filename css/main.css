@@ -166,6 +166,28 @@ people that prefer not to see them */
 }
 
 /*------------------------------\
+        LAYOUTS - Footer
+\------------------------------*/
+.footer {
+  background-color: #548136;
+  color: white;
+  padding: 3.125rem;
+  text-align: center;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 1.625rem;
+  width: 12.5rem;
+}
+
+.footer li img {
+  height: 2.51812rem;
+}
+
+/*------------------------------\
             TESTING
 \------------------------------*/
 /*# sourceMappingURL=main.css.map */
