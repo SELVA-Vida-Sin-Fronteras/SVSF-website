@@ -1,0 +1,8 @@
+/* convert `pixel` to `rem` */
+@function rem($pix) {
+  @return ($pix/16 * 1rem);
+}
+
+@function small($pix) {
+  @return ($pix/375 * 100vw);
+}
