@@ -3,6 +3,34 @@
 \------------------------------*/
 
 .home {
+  .img-container {
+    
+    background-image: url('../assets/mobile/landing-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vw;
+    width: 100vw;
+
+    @include media-md {
+      align-items: center;
+      background-image: url("../assets/tablet/hero-landing-tablet.jpg");
+      justify-content: center;
+      margin-bottom: rem(70);
+    }
+  }
+  .mission {
+    background-color: $very-desaturated-green;
+    padding: rem(6) rem(61) rem(12) rem(61);
+
+    @include media-md {
+      display: flex;
+      flex-direction: column;
+      height: rem(411);
+      justify-content: center;
+      width: rem(411);
+    }
+  }
   .action-card {
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +38,14 @@
     height: 100vw;
     width: 100vw;
     text-align: center;
+
+    @include media-md {
+      height: rem(413);
+      margin: auto;
+      margin-bottom: rem(70);
+      width: rem(413);
+    }
+
     &__link {
       @extend %transition-ease;
       display: block;

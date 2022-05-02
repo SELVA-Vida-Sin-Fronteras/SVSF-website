@@ -262,6 +262,39 @@ people that prefer not to see them */
 /*------------------------------\
           PAGES - Home
 \------------------------------*/
+.home .img-container {
+  background-image: url("../assets/mobile/landing-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vw;
+  width: 100vw;
+}
+
+@media screen and (min-width: 600px) {
+  .home .img-container {
+    align-items: center;
+    background-image: url("../assets/tablet/hero-landing-tablet.jpg");
+    justify-content: center;
+    margin-bottom: 4.375rem;
+  }
+}
+
+.home .mission {
+  background-color: rgba(84, 129, 54, 0.5);
+  padding: 0.375rem 3.8125rem 0.75rem 3.8125rem;
+}
+
+@media screen and (min-width: 600px) {
+  .home .mission {
+    display: flex;
+    flex-direction: column;
+    height: 25.6875rem;
+    justify-content: center;
+    width: 25.6875rem;
+  }
+}
+
 .home .action-card {
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,6 +302,15 @@ people that prefer not to see them */
   height: 100vw;
   width: 100vw;
   text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .home .action-card {
+    height: 25.8125rem;
+    margin: auto;
+    margin-bottom: 4.375rem;
+    width: 25.8125rem;
+  }
 }
 
 .home .action-card__link {
@@ -305,11 +347,6 @@ main {
 main .hero-img {
   margin: auto;
   width: 100vw;
-}
-
-main .mission {
-  background-color: rgba(84, 129, 54, 0.84);
-  padding: 0.375rem 3.8125rem 0.75rem 3.8125rem;
 }
 
 /*------------------------------\
