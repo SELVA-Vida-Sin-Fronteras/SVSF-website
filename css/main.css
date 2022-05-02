@@ -1,3 +1,4 @@
+/* convert `pixel` to `rem` */
 /*------------------------------\
     Normalize CSS 
 \------------------------------*/
@@ -89,6 +90,6 @@ people that prefer not to see them */
             TESTING
 \------------------------------*/
 body {
-  font-family: "Montserrat", sans-serif;
+  padding: 6.4vw;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+/*------------------------------\
+            Typography
+\------------------------------*/
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: rem(26);
+
+  &--large {
+    font-size: rem(36);
+    line-height: rem(48);
+  }
+
+  &--medium {
+    font-size: rem(24);
+    line-height: rem(36);
+  }
+  &--small {
+    font-size: rem(12);
+    line-height: rem(36);
+  }
+  &--bold {
+    font-weight: 700;
+  }
+}

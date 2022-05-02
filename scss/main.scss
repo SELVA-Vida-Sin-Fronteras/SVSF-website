@@ -1,9 +1,16 @@
+@import "abstracts/functions";
 @import "base/reset";
 
 /*------------------------------\
             TESTING
 \------------------------------*/
 
-body {
-  font-family: "Montserrat", sans-serif;
+@function small($pix) {
+  @return ($pix/375 * 100vw);
 }
+
+body {
+  padding: small(24);
+}
+
+
