@@ -1,0 +1,25 @@
+/*------------------------------\
+        LAYOUTS - Footer
+\------------------------------*/
+
+.footer {
+    background-color: $footer-bg-clr;
+    color: $main-txt-clr;
+    padding: rem(50);
+    text-align: center;
+  
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      margin-bottom: rem(26);
+      width: rem(200);
+    }
+  
+    li {
+      img {
+        height: rem(40.29);
+      }
+    }
+    
+  }

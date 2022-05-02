@@ -2,8 +2,10 @@
             Variables
 \------------------------------*/
 
-// Color Palette 
+// Color Palette
+$bright-green: rgb(116, 186, 70);;
 $dark-green: hsla(144, 70%, 27%, 1);
+$desaturated-dark-green:hsla(144, 70%, 27%, 0.75);
 $desaturated-black: hsla(0, 0%, 0%, 0.16);
 $desaturated-green: hsla(96, 41%, 36%, 0.84);
 $desaturated-gray: hsla(0, 0%, 17%, 0.8);
@@ -11,8 +13,14 @@ $green: hsla(96, 41%, 36%, 1);
 $gray: hsla(0, 0%, 44%, 1);
 $white: hsla(0, 0%, 100%, 1);
 
-// Background colors 
+// Effects
+$highlight-clr: $bright-green;
+
+// Background colors
+$footer-bg-clr: $green;
 $main-bg-clr: $desaturated-gray;
+$mission-bg-clr: $desaturated-green;
+$btn-bg-clr: $desaturated-dark-green;
 
 // Text Colors
 $main-txt-clr: $white;
