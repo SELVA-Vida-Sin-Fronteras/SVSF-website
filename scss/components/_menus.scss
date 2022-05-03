@@ -4,6 +4,7 @@
   height: 20px;
   position: relative;
   width: 36px;
+  z-index: 500;
 
   @include media-lg {
     display: none;
@@ -15,6 +16,7 @@
     left: 0;
     height: 5px;
     background-color: white;
+    
     width: 100%;
 
     &:hover {
@@ -43,9 +45,15 @@
   transition: 0.5s ease-in-out;
 }
 
+#burger.open span{
+  background-color: black;
+  transition: 0.8s ease-in-out;
+}
+
 #burger.open span:nth-child(1) {
   top: 10px;
   transform: rotate(135deg);
+  
 }
 
 #burger.open span:nth-child(2) {
@@ -56,12 +64,51 @@
 #burger.open span:nth-child(3) {
   top: 10px;
   transform: rotate(-135deg);
+  color: black;
 }
 .nav-menu {
-  display: none;
+  padding-top: rem(50);
+  position: fixed;
+  top: 0px;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: block;
+  z-index: 200;
+
 
   @include media-lg {
+    background-color: transparent;
     display: flex;
+    position: relative;
+    padding: 0;
+    width: auto;
+    height: auto;
+    left: auto;
+  }
+}
+
+
+#mobile-menu.open {
+  padding-top: rem(50);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: block;
+  z-index: 200;
+  transition: 0.8s ease-in-out;
+
+  .btn {
+    color: black;
+    width: 100%;
+
+    &__action {
+      background-color: none;
+    }
   }
 }
 

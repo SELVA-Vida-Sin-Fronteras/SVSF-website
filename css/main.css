@@ -140,6 +140,7 @@ people that prefer not to see them */
   height: 20px;
   position: relative;
   width: 36px;
+  z-index: 500;
 }
 
 @media screen and (min-width: 1200px) {
@@ -182,6 +183,11 @@ people that prefer not to see them */
   transition: 0.5s ease-in-out;
 }
 
+#burger.open span {
+  background-color: black;
+  transition: 0.8s ease-in-out;
+}
+
 #burger.open span:nth-child(1) {
   top: 10px;
   transform: rotate(135deg);
@@ -195,16 +201,53 @@ people that prefer not to see them */
 #burger.open span:nth-child(3) {
   top: 10px;
   transform: rotate(-135deg);
+  color: black;
 }
 
 .nav-menu {
-  display: none;
+  padding-top: 3.125rem;
+  position: fixed;
+  top: 0px;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: block;
+  z-index: 200;
 }
 
 @media screen and (min-width: 1200px) {
   .nav-menu {
+    background-color: transparent;
     display: flex;
+    position: relative;
+    padding: 0;
+    width: auto;
+    height: auto;
+    left: auto;
   }
+}
+
+#mobile-menu.open {
+  padding-top: 3.125rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: block;
+  z-index: 200;
+  transition: 0.8s ease-in-out;
+}
+
+#mobile-menu.open .btn {
+  color: black;
+  width: 100%;
+}
+
+#mobile-menu.open .btn__action {
+  background-color: none;
 }
 
 .btn {
