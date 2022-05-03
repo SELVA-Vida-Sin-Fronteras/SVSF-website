@@ -4,6 +4,8 @@
 
 main {
   color: $main-txt-clr;
+  min-width: 350px;
+  overflow: scroll;
   .hero-img {
     margin: auto;
     width: 100vw;

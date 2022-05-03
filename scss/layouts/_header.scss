@@ -11,6 +11,15 @@
     padding: medium(32);
   }
 
+  @include media-lg {
+    padding: large(36);
+  }
+
+  @include media-xl {
+    padding-left: extra(400);
+    padding-right: extra(400);
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
