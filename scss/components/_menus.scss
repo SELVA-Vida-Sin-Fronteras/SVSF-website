@@ -1,16 +1,62 @@
 .hamburger-menu {
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  position: relative;
+  width: 36px;
+
   @include media-lg {
     display: none;
   }
   span {
     display: block;
+    position: absolute;
+    opacity: 1;
+    left: 0;
     height: 5px;
     background-color: white;
-    margin-bottom: 5px;
-    width: 34px;
+    width: 100%;
+
+    &:hover {
+      color: $highlight-clr;
+    }
+
+    &:nth-child(1) {
+      top: 0px;
+    }
+
+    &:nth-child(2) {
+      top: 10px;
+    }
+
+    &:nth-child(3) {
+      top: 20px;
+    }
   }
 }
 
+#burger {
+  transition: 0.5s ease-in-out;
+}
+
+#burger span {
+  transition: 0.5s ease-in-out;
+}
+
+#burger.open span:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg);
+}
+
+#burger.open span:nth-child(2) {
+  opacity: 0;
+  left: -36px;
+}
+
+#burger.open span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg);
+}
 .nav-menu {
   display: none;
 
