@@ -11,6 +11,11 @@
   &--large {
     font-size: rem(36);
     line-height: rem(48);
+
+    @include media-lg {
+      font-size: rem(56);
+      line-height: rem(66);
+    }
   }
 
   &--medium {

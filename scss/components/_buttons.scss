@@ -1,0 +1,30 @@
+.btn {
+    @extend %transition-ease;
+    display: block;
+    font-size: rem(20);
+    margin-right: rem(5);
+    padding: rem(14) rem(16);
+    text-align: center;
+    text-transform: uppercase;
+  
+    &:hover {
+      background-color: $highlight-clr;
+      font-size: rem(22);
+      padding: rem(16) rem(18);
+    }
+  
+    &--action {
+      background-color: $btn-bg-clr;
+    }
+
+    &--inert {
+        opacity: 0.50;
+
+        &:hover {
+            background-color: transparent;
+            font-size: rem(20);
+            padding: rem(14) rem(16);
+          }
+    }
+  }
+  

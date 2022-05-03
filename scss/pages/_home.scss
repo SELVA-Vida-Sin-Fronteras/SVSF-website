@@ -3,6 +3,65 @@
 \------------------------------*/
 
 .home {
+  .img-container {
+    
+    background-image: url('../assets/mobile/landing-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vw;
+    overflow: hidden;
+    width: 100vw;
+
+    @include media-md {
+      align-items: center;
+      background-image: url("../assets/tablet/hero-landing-tablet.jpg");
+      height: medium(434);
+      justify-content: center;
+      margin-bottom: rem(70);
+      width: medium(773);
+    }
+
+    @include media-lg {
+      background-image: url("../assets/web/landing-hero.jpg");
+      // height: large(768);
+      height: 100vh;
+      width: large(1440);
+    }
+  }
+  .mission {
+    background-color: $very-desaturated-green;
+    padding: rem(6) rem(61) rem(12) rem(61);
+    overflow: scroll;
+
+    @include media-md {
+      display: flex;
+      flex-direction: column;
+      height: rem(411);
+      justify-content: center;
+      width: rem(411);
+    }
+
+
+    @include media-lg {
+      height: rem(435);
+      width: rem(668);
+    }
+  }
+  
+  .card-container {
+    background-color: white;
+
+    @include media-lg {
+      display: flex;
+      padding: large(100) large(39);
+    }
+    @include media-xl {
+      padding-left: extra(400);
+      padding-right: extra(400);
+    }
+  }
+
   .action-card {
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +69,18 @@
     height: 100vw;
     width: 100vw;
     text-align: center;
+
+    @include media-md {
+      height: rem(413);
+      margin: auto;
+      margin-bottom: rem(70);
+      width: rem(413);
+    }
+
+    @include media-lg {
+      padding: 0;
+    }
+
     &__link {
       @extend %transition-ease;
       display: block;
@@ -25,15 +96,15 @@
     }
 
     &--journey {
-      background-image: url("../assets//mobile/journey.jpg");
+      background-image: url("../assets/tablet/journey.jpg");
     }
 
     &--blog {
-      background-image: url("../assets/mobile/blog.jpg");
+      background-image: url("../assets/tablet/blog.jpg");
     }
 
     &--action {
-      background-image: url("../assets/mobile/action.jpg");
+      background-image: url("../assets/tablet/action.jpg");
     }
   }
 }

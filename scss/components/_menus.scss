@@ -1,9 +1,21 @@
 .hamburger-menu {
-    span {
-        display: block;
-        height: 5px;
-        background-color: white;
-        margin-bottom: 5px;
-        width: 34px;
-    }
+  @include media-lg {
+    display: none;
+  }
+  span {
+    display: block;
+    height: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+    width: 34px;
+  }
 }
+
+.nav-menu {
+  display: none;
+
+  @include media-lg {
+    display: flex;
+  }
+}
+

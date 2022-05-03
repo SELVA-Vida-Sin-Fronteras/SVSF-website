@@ -1,16 +1,32 @@
 /*------------------------------\
         PAGES - global
 \------------------------------*/
+body {
+  position: absolute;
+}
 
 main {
   color: $main-txt-clr;
+  margin-top: small(100);
+  min-width: 350px;
+  overflow: scroll;
+  position: relative;
+
+  @include media-md {
+    margin-top: medium(125);
+  }
+
+  @include media-lg {
+    margin-top: large(175);
+  }
+
+  @include media-xl {
+    margin-top: extra(150);
+  }
+
+
   .hero-img {
     margin: auto;
     width: 100vw;
-  }
-
-  .mission {
-    background-color: $desaturated-green;
-    padding: rem(6) rem(61) rem(12) rem(61);
   }
 }
