@@ -3,19 +3,26 @@
 \------------------------------*/
 
 .header {
-  background-color: $main-bg-clr;
-  padding: small(24);
   color: $main-txt-clr;
+  background-color: $main-bg-clr;
+  height: small(100);
+  padding: small(24);
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
 
   @include media-md {
     padding: medium(32);
+    height: medium(125);
   }
 
   @include media-lg {
     padding: large(36);
+    height: large(175);
   }
 
   @include media-xl {
+    height: extra(150);
     padding-left: extra(400);
     padding-right: extra(400);
   }

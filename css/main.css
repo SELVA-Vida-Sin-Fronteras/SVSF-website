@@ -191,25 +191,32 @@ people that prefer not to see them */
         LAYOUTS - header
 \------------------------------*/
 .header {
-  background-color: rgba(43, 43, 43, 0.8);
-  padding: 6.4vw;
   color: white;
+  background-color: rgba(43, 43, 43, 0.8);
+  height: 26.66667vw;
+  padding: 6.4vw;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
 }
 
 @media screen and (min-width: 600px) {
   .header {
     padding: 4.16667vw;
+    height: 16.27604vw;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header {
     padding: 2.5vw;
+    height: 12.15278vw;
   }
 }
 
 @media screen and (min-width: 2000px) {
   .header {
+    height: 7.5vw;
     padding-left: 20vw;
     padding-right: 20vw;
   }
@@ -396,10 +403,34 @@ people that prefer not to see them */
 /*------------------------------\
         PAGES - global
 \------------------------------*/
+body {
+  position: absolute;
+}
+
 main {
   color: white;
+  margin-top: 26.66667vw;
   min-width: 350px;
   overflow: scroll;
+  position: relative;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    margin-top: 16.27604vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    margin-top: 12.15278vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  main {
+    margin-top: 7.5vw;
+  }
 }
 
 main .hero-img {
