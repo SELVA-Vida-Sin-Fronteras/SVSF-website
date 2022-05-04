@@ -20,5 +20,110 @@
             TESTING
 \------------------------------*/
 
+.journey {
+  background-color: $main-bg-clr;
+  .img-container {
+    align-items: center;
+    background-image: none;
+    background-color: $desaturated-green;
+    display: flex;
+    justify-content: center;
+  }
 
+  .hero {
+    text-align: center;
+  }
+}
+section {
+  margin: 0 small(24);
+}
+.tour-2019 {
+  .img-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+  }
 
+  p {
+    margin: 0 small(24);
+  }
+
+  p,
+  .img-container {
+    margin-bottom: small(24);
+  }
+
+  .rivercruise {
+    background-image: url("../assets/mobile/rivercruise.jpg");
+    height: small(671.55);
+  }
+
+  .woman-at-river {
+    background-image: url("../assets/mobile/woman-at-river.jpg");
+    height: small(283.75);
+  }
+  .cooking {
+    background-image: url("../assets//mobile/cooking.jpg");
+    height: small(504);
+  }
+  .thorn-tree {
+    background-image: url("../assets/mobile/thorn-tree.jpg");
+    height: small(505.29);
+  }
+  .bamboo {
+    background-image: url("../assets/mobile/bamboo.jpg");
+    height: small(252);
+  }
+  .guide {
+    background-image: url("../assets/mobile/guide.jpg");
+    height: small(252);
+  }
+  .accomoadations {
+    background-image: url("../assets/mobile/accomodationsjpg.jpg");
+    height: small(247.97);
+  }
+  .accomoadations-2 {
+    background-image: url("../assets/mobile/accomodations2.jpg");
+    height: small(83.66);
+  }
+  .clinic {
+    background-image: url("../assets/mobile/clinic1.jpg");
+    height: small(252);
+  }
+  .clinic-2 {
+    background-image: url("../assets/mobile/clinic2.jpg");
+    height: small(585);
+  }
+  .clinic-3 {
+    background-image: url("../assets/mobile/clinic3.jpg");
+    height: small(252);
+  }
+  .dining {
+    background-image: url("../assets/mobile/dining.jpg");
+    height: small(252);
+  }
+  .frog {
+    background-image: url("../assets/mobile/frog.jpg");
+    height: small(500);
+  }
+  .snail {
+    background-image: url("../assets/mobile/snail.jpg");
+    height: small(250);
+  }
+  .monarch {
+    background-image: url("../assets/mobile/monarch.jpg");
+    height: small(250);
+  }
+  .monkey {
+    background-image: url("../assets/mobile/monkey.jpg");
+    height: small(211);
+  }
+  .quito {
+    background-image: url("../assets/mobile/quito.jpg");
+    height: small(562);
+  }
+  .lizard {
+    background-image: url("../assets/mobile/lizard.jpg");
+    height: small(282);
+  }
+}

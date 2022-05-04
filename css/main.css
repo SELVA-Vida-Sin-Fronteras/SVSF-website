@@ -578,4 +578,128 @@ main .hero-img {
 /*------------------------------\
             TESTING
 \------------------------------*/
+.journey {
+  background-color: rgba(43, 43, 43, 0.8);
+}
+
+.journey .img-container {
+  align-items: center;
+  background-image: none;
+  background-color: rgba(84, 129, 54, 0.84);
+  display: flex;
+  justify-content: center;
+}
+
+.journey .hero {
+  text-align: center;
+}
+
+section {
+  margin: 0 6.4vw;
+}
+
+.tour-2019 .img-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+.tour-2019 p {
+  margin: 0 6.4vw;
+}
+
+.tour-2019 p,
+.tour-2019 .img-container {
+  margin-bottom: 6.4vw;
+}
+
+.tour-2019 .rivercruise {
+  background-image: url("../assets/mobile/rivercruise.jpg");
+  height: 179.08vw;
+}
+
+.tour-2019 .woman-at-river {
+  background-image: url("../assets/mobile/woman-at-river.jpg");
+  height: 75.66667vw;
+}
+
+.tour-2019 .cooking {
+  background-image: url("../assets//mobile/cooking.jpg");
+  height: 134.4vw;
+}
+
+.tour-2019 .thorn-tree {
+  background-image: url("../assets/mobile/thorn-tree.jpg");
+  height: 134.744vw;
+}
+
+.tour-2019 .bamboo {
+  background-image: url("../assets/mobile/bamboo.jpg");
+  height: 67.2vw;
+}
+
+.tour-2019 .guide {
+  background-image: url("../assets/mobile/guide.jpg");
+  height: 67.2vw;
+}
+
+.tour-2019 .accomoadations {
+  background-image: url("../assets/mobile/accomodationsjpg.jpg");
+  height: 66.12533vw;
+}
+
+.tour-2019 .accomoadations-2 {
+  background-image: url("../assets/mobile/accomodations2.jpg");
+  height: 22.30933vw;
+}
+
+.tour-2019 .clinic {
+  background-image: url("../assets/mobile/clinic1.jpg");
+  height: 67.2vw;
+}
+
+.tour-2019 .clinic-2 {
+  background-image: url("../assets/mobile/clinic2.jpg");
+  height: 156vw;
+}
+
+.tour-2019 .clinic-3 {
+  background-image: url("../assets/mobile/clinic3.jpg");
+  height: 67.2vw;
+}
+
+.tour-2019 .dining {
+  background-image: url("../assets/mobile/dining.jpg");
+  height: 67.2vw;
+}
+
+.tour-2019 .frog {
+  background-image: url("../assets/mobile/frog.jpg");
+  height: 133.33333vw;
+}
+
+.tour-2019 .snail {
+  background-image: url("../assets/mobile/snail.jpg");
+  height: 66.66667vw;
+}
+
+.tour-2019 .monarch {
+  background-image: url("../assets/mobile/monarch.jpg");
+  height: 66.66667vw;
+}
+
+.tour-2019 .monkey {
+  background-image: url("../assets/mobile/monkey.jpg");
+  height: 56.26667vw;
+}
+
+.tour-2019 .quito {
+  background-image: url("../assets/mobile/quito.jpg");
+  height: 149.86667vw;
+}
+
+.tour-2019 .lizard {
+  background-image: url("../assets/mobile/lizard.jpg");
+  height: 75.2vw;
+}
 /*# sourceMappingURL=main.css.map */
