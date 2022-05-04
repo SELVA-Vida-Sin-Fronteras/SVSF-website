@@ -1,0 +1,38 @@
+/*------------------------------\
+      PAGES - Who we are
+\------------------------------*/
+
+.who-we-are {
+    background-color: $main-bg-clr;
+  .img-container {
+    background-image: url("../assets/mobile/who-we-are.jpg");
+
+    @include media-md {
+      background-image: url("../assets/tablet/who-we-are.jpg");
+    }
+    @include media-lg {
+      background-image: url("../assets/web/who-we-are.jpg");
+    }
+  }
+
+  .margin {
+    margin: small(24);
+
+    @include media-md {
+      margin: medium(40);
+    }
+
+  }
+
+  section {
+
+    @include media-lg {
+      margin: auto;
+      max-width: rem(900);
+    }
+  }
+
+  h2 {
+    margin-top: rem(40);
+  }
+}

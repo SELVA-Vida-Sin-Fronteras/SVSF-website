@@ -3,32 +3,7 @@
 \------------------------------*/
 
 .home {
-  .img-container {
-    
-    background-image: url('../assets/mobile/landing-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 100vw;
-    overflow: hidden;
-    width: 100vw;
-
-    @include media-md {
-      align-items: center;
-      background-image: url("../assets/tablet/hero-landing-tablet.jpg");
-      height: medium(434);
-      justify-content: center;
-      margin-bottom: rem(70);
-      width: medium(773);
-    }
-
-    @include media-lg {
-      background-image: url("../assets/web/landing-hero.jpg");
-      // height: large(768);
-      height: 100vh;
-      width: large(1440);
-    }
-  }
+  
   .mission {
     background-color: $very-desaturated-green;
     padding: rem(6) rem(61) rem(12) rem(61);

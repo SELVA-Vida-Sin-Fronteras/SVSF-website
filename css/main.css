@@ -374,35 +374,6 @@ people that prefer not to see them */
 /*------------------------------\
           PAGES - Home
 \------------------------------*/
-.home .img-container {
-  background-image: url("../assets/mobile/landing-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  height: 100vw;
-  overflow: hidden;
-  width: 100vw;
-}
-
-@media screen and (min-width: 600px) {
-  .home .img-container {
-    align-items: center;
-    background-image: url("../assets/tablet/hero-landing-tablet.jpg");
-    height: 56.51042vw;
-    justify-content: center;
-    margin-bottom: 4.375rem;
-    width: 100.65104vw;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .home .img-container {
-    background-image: url("../assets/web/landing-hero.jpg");
-    height: 100vh;
-    width: 100vw;
-  }
-}
-
 .home .mission {
   background-color: rgba(84, 129, 54, 0.5);
   padding: 0.375rem 3.8125rem 0.75rem 3.8125rem;
@@ -528,6 +499,79 @@ main {
 main .hero-img {
   margin: auto;
   width: 100vw;
+}
+
+.img-container {
+  background-image: url("../assets/mobile/landing-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vw;
+  overflow: hidden;
+  width: 100vw;
+}
+
+@media screen and (min-width: 600px) {
+  .img-container {
+    align-items: center;
+    background-image: url("../assets/tablet/hero-landing-tablet.jpg");
+    height: 56.51042vw;
+    justify-content: center;
+    margin-bottom: 4.375rem;
+    width: 100.65104vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-container {
+    background-image: url("../assets/web/landing-hero.jpg");
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+/*------------------------------\
+      PAGES - Who we are
+\------------------------------*/
+.who-we-are {
+  background-color: rgba(43, 43, 43, 0.8);
+}
+
+.who-we-are .img-container {
+  background-image: url("../assets/mobile/who-we-are.jpg");
+}
+
+@media screen and (min-width: 600px) {
+  .who-we-are .img-container {
+    background-image: url("../assets/tablet/who-we-are.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .who-we-are .img-container {
+    background-image: url("../assets/web/who-we-are.jpg");
+  }
+}
+
+.who-we-are .margin {
+  margin: 6.4vw;
+}
+
+@media screen and (min-width: 600px) {
+  .who-we-are .margin {
+    margin: 5.20833vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .who-we-are section {
+    margin: auto;
+    max-width: 56.25rem;
+  }
+}
+
+.who-we-are h2 {
+  margin-top: 2.5rem;
 }
 
 /*------------------------------\
