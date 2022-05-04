@@ -5,6 +5,25 @@ body {
   position: absolute;
 }
 
+.hero {
+  background-color: $very-desaturated-green;
+  padding: rem(6) rem(61) rem(12) rem(61);
+  overflow: scroll;
+
+  @include media-md {
+    display: flex;
+    flex-direction: column;
+    height: rem(411);
+    justify-content: center;
+    width: rem(411);
+  }
+
+
+  @include media-lg {
+    height: rem(435);
+    width: rem(668);
+  }
+}
 main {
   color: $main-txt-clr;
   margin-top: small(100);

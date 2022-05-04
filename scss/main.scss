@@ -24,10 +24,10 @@
   background-color: $main-bg-clr;
   .img-container {
     align-items: center;
-    background-image: none;
-    background-color: $desaturated-green;
+
     display: flex;
     justify-content: center;
+    width: 100vw;
   }
 
   .hero {
@@ -38,14 +38,33 @@ section {
   margin: 0 small(24);
 }
 .tour-2019 {
+  @include media-md {
+    // display: grid;
+    // grid-template-columns: medium(378) medium(378);
+    // column-gap: rem(24);
+    // grid-template-areas:
+    //   "A B"
+    //   "A C"
+    //   "A C"
+    //   "A D"
+    //   "E F"
+      // ;
+  }
   .img-container {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
+
+    @include media-md {
+      width: medium(378);
+    }
   }
 
   p {
     margin: 0 small(24);
+    &:nth-child(1) {
+      grid-area: C;
+    }
   }
 
   p,
@@ -56,19 +75,42 @@ section {
   .rivercruise {
     background-image: url("../assets/mobile/rivercruise.jpg");
     height: small(671.55);
+    grid-area: A;
+    @include media-md {
+      background-image: url("../assets/tablet/rivercruise.jpg");
+      height: medium(672);
+    }
   }
 
   .woman-at-river {
     background-image: url("../assets/mobile/woman-at-river.jpg");
     height: small(283.75);
+    grid-area: B;
+
+    @include media-md {
+      background-image: url("../assets/tablet/woman-at-river.jpg");
+      height: medium(284);
+    }
   }
   .cooking {
     background-image: url("../assets//mobile/cooking.jpg");
     height: small(504);
+    grid-area: D;
+
+    @include media-md {
+      background-image: url("../assets/tablet/cooking.jpg");
+      height: medium(504);
+    }
   }
   .thorn-tree {
     background-image: url("../assets/mobile/thorn-tree.jpg");
     height: small(505.29);
+    grid-area: E;
+
+    @include media-md {
+      background-image: url("../assets/tablet/thorn-tree.jpg");
+      height: medium(505);
+    }
   }
   .bamboo {
     background-image: url("../assets/mobile/bamboo.jpg");
