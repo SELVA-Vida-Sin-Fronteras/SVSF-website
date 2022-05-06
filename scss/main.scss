@@ -46,24 +46,8 @@ section {
   @include media-md {
     display: grid;
     grid-template-columns: medium(378) medium(378);
-    column-gap: rem(12);
-    row-gap: 0;
-    grid-template-areas:
-      "river-cruise woman-at-river"
-      "river-cruise people"
-      "river-cruise cooking"
-      "thorn-tree cooking"
-      "thorn-tree bamboo"
-      "species bamboo-para"
-      "guide accomodations"
-      "guide-para accomodations-para"
-      "clinic accomodations-2"
-      "clinic dining"
-      "clinic-para dining"
-      "clinic-3 dining"
-      "clinic-3 dining-para"
-      "clinic-3 clinic-2"
-      "frog clinic-2"
+    column-gap: rem(11);
+    grid-template-rows: repeat(164, meduim(25));
   }
   .img-container {
     background-repeat: no-repeat;
@@ -86,6 +70,17 @@ section {
   p,
   .img-container {
     margin-bottom: small(24);
+
+    @include media-md {
+      margin: 0;
+    }
+  }
+  p {
+    margin: 0 small(24);
+
+    @include media-md {
+      margin:  medium(11);
+    }
   }
 
   .rivercruise {
@@ -94,7 +89,9 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/rivercruise.jpg");
       height: medium(672);
-      grid-area: river-cruise;
+      grid-column: 1;
+      grid-row: 1/32;
+      row-gap: rem(16);
     }
   }
 
@@ -105,12 +102,14 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/woman-at-river.jpg");
       height: medium(284);
-      grid-area: woman-at-river;
+      grid-column: 2;
+      grid-row: 1/16 ;
     }
   }
 
   .people {
-    grid-area: people;
+    grid-column: 2;
+    grid-row: 16;
   }
 
   .cooking {
@@ -120,7 +119,8 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/cooking.jpg");
       height: medium(504);
-      grid-area: cooking;
+      grid-column: 2;
+      grid-row: 17/45;
     }
   }
   .thorn-tree {
@@ -130,26 +130,31 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/thorn-tree.jpg");
       height: medium(505);
-      grid-area: thorn-tree;
+      grid-column: 1;
+      grid-row: 32/62;
     }
+  }
+  .species {
+    grid-row: 164;
   }
   .bamboo {
     background-image: url("../assets/mobile/bamboo.jpg");
     height: small(252);
-    grid-area: bamboo;
 
     @include media-md {
       background-image: url("../assets/tablet/bamboo.jpg");
       height: medium(252);
+      grid-column: 2;
+      grid-row: 46/59;
     }
   }
 
   .species2 {
-    grid-area: species2;
+    grid-row: 164;
   }
 
   .bamboo-para {
-    grid-area: bamboo-para;
+    grid-row: 164;
   }
 
   .guide {
@@ -159,12 +164,12 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/guide.jpg");
       height: medium(252);
-      grid-area: guide;
+      grid-row: 164;
     }
   }
 
   .guide-para {
-    grid-area: guide-para;
+    grid-row: 164;
   }
   .accomoadations {
     background-image: url("../assets/mobile/accomodationsjpg.jpg");
@@ -173,12 +178,12 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/accomodations.jpg");
       height: medium(252);
-      grid-area: accomodations;
+      grid-row: 164;
     }
   }
 
-  .accomoadations-para {
-    grid-area: accomodations-para;
+  .accomodations-para {
+    grid-row: 164;
   }
 
   .accomoadations-2 {
@@ -187,8 +192,8 @@ section {
 
     @include media-md {
       background-image: url("../assets/tablet/accomodations2.jpg");
-      grid-area: accomodations-2;
       height: medium(83.66);
+      grid-row: 164;
     }
   }
   .clinic {
@@ -196,12 +201,12 @@ section {
     height: small(252);
 
     @include media-md {
-      grid-area: clinic;
       height: medium(252);
+      grid-row: 164;
     }
   }
   .clinic-para {
-    grid-area: clinic-para;
+    grid-row: 164;
   }
   .clinic-2 {
     background-image: url("../assets/mobile/clinic2.jpg");
@@ -210,7 +215,7 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/clinic2.jpg");
       height: medium(585);
-      grid-area: clinic-2;
+      grid-row: 164;
     }
   }
   .clinic-3 {
@@ -220,7 +225,7 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/clinic3.jpg");
       height: medium(252);
-      grid-area: clinic-3;
+      grid-row: 164;
     }
   }
   .dining {
@@ -230,12 +235,12 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/dining.jpg");
       height: medium(252);
-      grid-area: dining;
+      grid-row: 164;
     }
   }
 
   .dining-para {
-    grid-area: dining-para;
+    grid-row: 164;
   }
   .frog {
     background-image: url("../assets/mobile/frog.jpg");
@@ -244,7 +249,11 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/frog.jpg");
       height: medium(500);
+      grid-row: 164;
     }
+  }
+  .species2 {
+    grid-row: 164;
   }
   .snail {
     background-image: url("../assets/mobile/snail.jpg");
@@ -253,24 +262,63 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/snail.jpg");
       height: medium(252);
+      grid-row: 164;
     }
   }
-
+.snail-para {
+  grid-row: 164;
+}
 
   .monarch {
     background-image: url("../assets/mobile/monarch.jpg");
     height: small(250);
+
+    @include media-md {
+      background-image: url("../assets/tablet/monarch.jpg");
+      height: medium(252);
+      grid-row: 164;
+    }
+  }
+  .monarch-para {
+    grid-row: 164;
   }
   .monkey {
     background-image: url("../assets/mobile/monkey.jpg");
     height: small(211);
+
+    @include media-md {
+      background-image: url("../assets/tablet/monkey.jpg");
+      height: medium(211);
+      grid-row: 164;
+    }
+  }
+  .monkey-para {
+    grid-row: 164;
   }
   .quito {
     background-image: url("../assets/mobile/quito.jpg");
     height: small(562);
+
+    @include media-md {
+      background-image: url("../assets/tablet/quito.jpg");
+      height: medium(562);
+      grid-row: 164;
+    }
+  }
+  .quito-para {
+    grid-row: 164;
   }
   .lizard {
     background-image: url("../assets/mobile/lizard.jpg");
     height: small(282);
+
+    @include media-md {
+      background-image: url("../assets/tablet/lizards.jpg");
+      height: medium(282);
+      grid-row: 164;
+    }
+  }
+  .galapagos-para {
+    grid-area: 164;
   }
 }

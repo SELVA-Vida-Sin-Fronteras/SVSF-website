@@ -632,9 +632,8 @@ section {
   .tour-2019 {
     display: grid;
     grid-template-columns: 49.21875vw 49.21875vw;
-    column-gap: 0.75rem;
-    row-gap: 0;
-    grid-template-areas: "river-cruise woman-at-river" "river-cruise people" "river-cruise cooking" "thorn-tree cooking" "thorn-tree bamboo" "species bamboo-para" "guide accomodations" "guide-para accomodations-para" "clinic accomodations-2" "clinic dining" "clinic-para dining" "clinic-3 dining" "clinic-3 dining-para" "clinic-3 clinic-2" "frog clinic-2";
+    column-gap: 0.6875rem;
+    grid-template-rows: repeat(164, meduim(25));
   }
 }
 
@@ -665,6 +664,23 @@ section {
   margin-bottom: 6.4vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 p,
+  .tour-2019 .img-container {
+    margin: 0;
+  }
+}
+
+.tour-2019 p {
+  margin: 0 6.4vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 p {
+    margin: 1.43229vw;
+  }
+}
+
 .tour-2019 .rivercruise {
   background-image: url("../assets/mobile/rivercruise.jpg");
   height: 179.08vw;
@@ -674,7 +690,9 @@ section {
   .tour-2019 .rivercruise {
     background-image: url("../assets/tablet/rivercruise.jpg");
     height: 87.5vw;
-    grid-area: river-cruise;
+    grid-column: 1;
+    grid-row: 1/32;
+    row-gap: 1rem;
   }
 }
 
@@ -687,12 +705,14 @@ section {
   .tour-2019 .woman-at-river {
     background-image: url("../assets/tablet/woman-at-river.jpg");
     height: 36.97917vw;
-    grid-area: woman-at-river;
+    grid-column: 2;
+    grid-row: 1/16;
   }
 }
 
 .tour-2019 .people {
-  grid-area: people;
+  grid-column: 2;
+  grid-row: 16;
 }
 
 .tour-2019 .cooking {
@@ -704,7 +724,8 @@ section {
   .tour-2019 .cooking {
     background-image: url("../assets/tablet/cooking.jpg");
     height: 65.625vw;
-    grid-area: cooking;
+    grid-column: 2;
+    grid-row: 17/45;
   }
 }
 
@@ -717,29 +738,35 @@ section {
   .tour-2019 .thorn-tree {
     background-image: url("../assets/tablet/thorn-tree.jpg");
     height: 65.75521vw;
-    grid-area: thorn-tree;
+    grid-column: 1;
+    grid-row: 32/62;
   }
+}
+
+.tour-2019 .species {
+  grid-row: 164;
 }
 
 .tour-2019 .bamboo {
   background-image: url("../assets/mobile/bamboo.jpg");
   height: 67.2vw;
-  grid-area: bamboo;
 }
 
 @media screen and (min-width: 600px) {
   .tour-2019 .bamboo {
     background-image: url("../assets/tablet/bamboo.jpg");
     height: 32.8125vw;
+    grid-column: 2;
+    grid-row: 46/59;
   }
 }
 
 .tour-2019 .species2 {
-  grid-area: species2;
+  grid-row: 164;
 }
 
 .tour-2019 .bamboo-para {
-  grid-area: bamboo-para;
+  grid-row: 164;
 }
 
 .tour-2019 .guide {
@@ -751,12 +778,12 @@ section {
   .tour-2019 .guide {
     background-image: url("../assets/tablet/guide.jpg");
     height: 32.8125vw;
-    grid-area: guide;
+    grid-row: 164;
   }
 }
 
 .tour-2019 .guide-para {
-  grid-area: guide-para;
+  grid-row: 164;
 }
 
 .tour-2019 .accomoadations {
@@ -768,12 +795,12 @@ section {
   .tour-2019 .accomoadations {
     background-image: url("../assets/tablet/accomodations.jpg");
     height: 32.8125vw;
-    grid-area: accomodations;
+    grid-row: 164;
   }
 }
 
-.tour-2019 .accomoadations-para {
-  grid-area: accomodations-para;
+.tour-2019 .accomodations-para {
+  grid-row: 164;
 }
 
 .tour-2019 .accomoadations-2 {
@@ -784,8 +811,8 @@ section {
 @media screen and (min-width: 600px) {
   .tour-2019 .accomoadations-2 {
     background-image: url("../assets/tablet/accomodations2.jpg");
-    grid-area: accomodations-2;
     height: 10.89323vw;
+    grid-row: 164;
   }
 }
 
@@ -796,13 +823,13 @@ section {
 
 @media screen and (min-width: 600px) {
   .tour-2019 .clinic {
-    grid-area: clinic;
     height: 32.8125vw;
+    grid-row: 164;
   }
 }
 
 .tour-2019 .clinic-para {
-  grid-area: clinic-para;
+  grid-row: 164;
 }
 
 .tour-2019 .clinic-2 {
@@ -814,7 +841,7 @@ section {
   .tour-2019 .clinic-2 {
     background-image: url("../assets/tablet/clinic2.jpg");
     height: 76.17188vw;
-    grid-area: clinic-2;
+    grid-row: 164;
   }
 }
 
@@ -827,7 +854,7 @@ section {
   .tour-2019 .clinic-3 {
     background-image: url("../assets/tablet/clinic3.jpg");
     height: 32.8125vw;
-    grid-area: clinic-3;
+    grid-row: 164;
   }
 }
 
@@ -840,12 +867,12 @@ section {
   .tour-2019 .dining {
     background-image: url("../assets/tablet/dining.jpg");
     height: 32.8125vw;
-    grid-area: dining;
+    grid-row: 164;
   }
 }
 
 .tour-2019 .dining-para {
-  grid-area: dining-para;
+  grid-row: 164;
 }
 
 .tour-2019 .frog {
@@ -857,7 +884,12 @@ section {
   .tour-2019 .frog {
     background-image: url("../assets/tablet/frog.jpg");
     height: 65.10417vw;
+    grid-row: 164;
   }
+}
+
+.tour-2019 .species2 {
+  grid-row: 164;
 }
 
 .tour-2019 .snail {
@@ -869,7 +901,12 @@ section {
   .tour-2019 .snail {
     background-image: url("../assets/tablet/snail.jpg");
     height: 32.8125vw;
+    grid-row: 164;
   }
+}
+
+.tour-2019 .snail-para {
+  grid-row: 164;
 }
 
 .tour-2019 .monarch {
@@ -877,9 +914,33 @@ section {
   height: 66.66667vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .monarch {
+    background-image: url("../assets/tablet/monarch.jpg");
+    height: 32.8125vw;
+    grid-row: 164;
+  }
+}
+
+.tour-2019 .monarch-para {
+  grid-row: 164;
+}
+
 .tour-2019 .monkey {
   background-image: url("../assets/mobile/monkey.jpg");
   height: 56.26667vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .monkey {
+    background-image: url("../assets/tablet/monkey.jpg");
+    height: 27.47396vw;
+    grid-row: 164;
+  }
+}
+
+.tour-2019 .monkey-para {
+  grid-row: 164;
 }
 
 .tour-2019 .quito {
@@ -887,8 +948,32 @@ section {
   height: 149.86667vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .quito {
+    background-image: url("../assets/tablet/quito.jpg");
+    height: 73.17708vw;
+    grid-row: 164;
+  }
+}
+
+.tour-2019 .quito-para {
+  grid-row: 164;
+}
+
 .tour-2019 .lizard {
   background-image: url("../assets/mobile/lizard.jpg");
   height: 75.2vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .lizard {
+    background-image: url("../assets/tablet/lizards.jpg");
+    height: 36.71875vw;
+    grid-row: 164;
+  }
+}
+
+.tour-2019 .galapagos-para {
+  grid-area: 164;
 }
 /*# sourceMappingURL=main.css.map */
