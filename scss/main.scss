@@ -24,14 +24,19 @@
   background-color: $main-bg-clr;
   .img-container {
     align-items: center;
-
+    background-image: url("../assets/mobile/enrichment.jpg");
     display: flex;
     justify-content: center;
     width: 100vw;
+
+    @include media-md {
+      background-image: url("../assets/tablet/enrichment.jpg");
+    }
   }
 
   .hero {
     text-align: center;
+    background-color: hsla(0, 0, 0, 0.6);
   }
 }
 section {
@@ -39,16 +44,26 @@ section {
 }
 .tour-2019 {
   @include media-md {
-    // display: grid;
-    // grid-template-columns: medium(378) medium(378);
-    // column-gap: rem(24);
-    // grid-template-areas:
-    //   "A B"
-    //   "A C"
-    //   "A C"
-    //   "A D"
-    //   "E F"
-      // ;
+    display: grid;
+    grid-template-columns: medium(378) medium(378);
+    column-gap: rem(12);
+    row-gap: 0;
+    grid-template-areas:
+      "river-cruise woman-at-river"
+      "river-cruise people"
+      "river-cruise cooking"
+      "thorn-tree cooking"
+      "thorn-tree bamboo"
+      "species bamboo-para"
+      "guide accomodations"
+      "guide-para accomodations-para"
+      "clinic accomodations-2"
+      "clinic dining"
+      "clinic-para dining"
+      "clinic-3 dining"
+      "clinic-3 dining-para"
+      "clinic-3 clinic-2"
+      "frog clinic-2"
   }
   .img-container {
     background-repeat: no-repeat;
@@ -62,8 +77,9 @@ section {
 
   p {
     margin: 0 small(24);
-    &:nth-child(1) {
-      grid-area: C;
+
+    @include media-md {
+      margin: 0 medium(11);
     }
   }
 
@@ -75,83 +91,172 @@ section {
   .rivercruise {
     background-image: url("../assets/mobile/rivercruise.jpg");
     height: small(671.55);
-    grid-area: A;
     @include media-md {
       background-image: url("../assets/tablet/rivercruise.jpg");
       height: medium(672);
+      grid-area: river-cruise;
     }
   }
 
   .woman-at-river {
     background-image: url("../assets/mobile/woman-at-river.jpg");
     height: small(283.75);
-    grid-area: B;
 
     @include media-md {
       background-image: url("../assets/tablet/woman-at-river.jpg");
       height: medium(284);
+      grid-area: woman-at-river;
     }
   }
+
+  .people {
+    grid-area: people;
+  }
+
   .cooking {
     background-image: url("../assets//mobile/cooking.jpg");
     height: small(504);
-    grid-area: D;
 
     @include media-md {
       background-image: url("../assets/tablet/cooking.jpg");
       height: medium(504);
+      grid-area: cooking;
     }
   }
   .thorn-tree {
     background-image: url("../assets/mobile/thorn-tree.jpg");
     height: small(505.29);
-    grid-area: E;
 
     @include media-md {
       background-image: url("../assets/tablet/thorn-tree.jpg");
       height: medium(505);
+      grid-area: thorn-tree;
     }
   }
   .bamboo {
     background-image: url("../assets/mobile/bamboo.jpg");
     height: small(252);
+    grid-area: bamboo;
+
+    @include media-md {
+      background-image: url("../assets/tablet/bamboo.jpg");
+      height: medium(252);
+    }
   }
+
+  .species2 {
+    grid-area: species2;
+  }
+
+  .bamboo-para {
+    grid-area: bamboo-para;
+  }
+
   .guide {
     background-image: url("../assets/mobile/guide.jpg");
     height: small(252);
+
+    @include media-md {
+      background-image: url("../assets/tablet/guide.jpg");
+      height: medium(252);
+      grid-area: guide;
+    }
+  }
+
+  .guide-para {
+    grid-area: guide-para;
   }
   .accomoadations {
     background-image: url("../assets/mobile/accomodationsjpg.jpg");
     height: small(247.97);
+
+    @include media-md {
+      background-image: url("../assets/tablet/accomodations.jpg");
+      height: medium(252);
+      grid-area: accomodations;
+    }
   }
+
+  .accomoadations-para {
+    grid-area: accomodations-para;
+  }
+
   .accomoadations-2 {
     background-image: url("../assets/mobile/accomodations2.jpg");
     height: small(83.66);
+
+    @include media-md {
+      background-image: url("../assets/tablet/accomodations2.jpg");
+      grid-area: accomodations-2;
+      height: medium(83.66);
+    }
   }
   .clinic {
     background-image: url("../assets/mobile/clinic1.jpg");
     height: small(252);
+
+    @include media-md {
+      grid-area: clinic;
+      height: medium(252);
+    }
+  }
+  .clinic-para {
+    grid-area: clinic-para;
   }
   .clinic-2 {
     background-image: url("../assets/mobile/clinic2.jpg");
     height: small(585);
+
+    @include media-md {
+      background-image: url("../assets/tablet/clinic2.jpg");
+      height: medium(585);
+      grid-area: clinic-2;
+    }
   }
   .clinic-3 {
     background-image: url("../assets/mobile/clinic3.jpg");
     height: small(252);
+
+    @include media-md {
+      background-image: url("../assets/tablet/clinic3.jpg");
+      height: medium(252);
+      grid-area: clinic-3;
+    }
   }
   .dining {
     background-image: url("../assets/mobile/dining.jpg");
     height: small(252);
+
+    @include media-md {
+      background-image: url("../assets/tablet/dining.jpg");
+      height: medium(252);
+      grid-area: dining;
+    }
+  }
+
+  .dining-para {
+    grid-area: dining-para;
   }
   .frog {
     background-image: url("../assets/mobile/frog.jpg");
     height: small(500);
+
+    @include media-md {
+      background-image: url("../assets/tablet/frog.jpg");
+      height: medium(500);
+    }
   }
   .snail {
     background-image: url("../assets/mobile/snail.jpg");
     height: small(250);
+
+    @include media-md {
+      background-image: url("../assets/tablet/snail.jpg");
+      height: medium(252);
+    }
   }
+
+
   .monarch {
     background-image: url("../assets/mobile/monarch.jpg");
     height: small(250);
