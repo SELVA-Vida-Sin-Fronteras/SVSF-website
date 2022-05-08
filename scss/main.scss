@@ -257,11 +257,13 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/frog.jpg");
       height: medium(500);
-      grid-row: 164;
+      grid-column: 1;
+      grid-row: 86/105;
     }
   }
   .species2 {
-    grid-row: 164;
+    grid-column: 1;
+    grid-row: 105;
   }
   .snail {
     background-image: url("../assets/mobile/snail.jpg");
@@ -270,11 +272,13 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/snail.jpg");
       height: medium(252);
-      grid-row: 164;
+      grid-column: 2;
+      grid-row: 106;
     }
   }
 .snail-para {
-  grid-row: 164;
+  grid-column: 2;
+  grid-row: 107;
 }
 
   .monarch {
@@ -284,11 +288,13 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/monarch.jpg");
       height: medium(252);
-      grid-row: 164;
+      grid-column: 1;
+      grid-row: 106;
     }
   }
   .monarch-para {
-    grid-row: 164;
+    grid-column: 1;
+    grid-row: 107;
   }
   .monkey {
     background-image: url("../assets/mobile/monkey.jpg");

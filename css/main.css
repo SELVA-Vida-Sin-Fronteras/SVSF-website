@@ -892,12 +892,14 @@ section {
   .tour-2019 .frog {
     background-image: url("../assets/tablet/frog.jpg");
     height: 65.10417vw;
-    grid-row: 164;
+    grid-column: 1;
+    grid-row: 86/105;
   }
 }
 
 .tour-2019 .species2 {
-  grid-row: 164;
+  grid-column: 1;
+  grid-row: 105;
 }
 
 .tour-2019 .snail {
@@ -909,12 +911,14 @@ section {
   .tour-2019 .snail {
     background-image: url("../assets/tablet/snail.jpg");
     height: 32.8125vw;
-    grid-row: 164;
+    grid-column: 2;
+    grid-row: 106;
   }
 }
 
 .tour-2019 .snail-para {
-  grid-row: 164;
+  grid-column: 2;
+  grid-row: 107;
 }
 
 .tour-2019 .monarch {
@@ -926,12 +930,14 @@ section {
   .tour-2019 .monarch {
     background-image: url("../assets/tablet/monarch.jpg");
     height: 32.8125vw;
-    grid-row: 164;
+    grid-column: 1;
+    grid-row: 106;
   }
 }
 
 .tour-2019 .monarch-para {
-  grid-row: 164;
+  grid-column: 1;
+  grid-row: 107;
 }
 
 .tour-2019 .monkey {
