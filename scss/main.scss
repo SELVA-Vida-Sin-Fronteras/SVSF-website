@@ -79,7 +79,7 @@ section {
     margin: 0 small(24);
 
     @include media-md {
-      margin:  medium(11);
+      margin: medium(11);
     }
   }
 
@@ -90,8 +90,8 @@ section {
       background-image: url("../assets/tablet/rivercruise.jpg");
       height: medium(672);
       grid-column: 1;
-      grid-row: 1/32;
-      row-gap: rem(16);
+      // grid-row: 1/32;
+      grid-row: 1/27;
     }
   }
 
@@ -103,13 +103,15 @@ section {
       background-image: url("../assets/tablet/woman-at-river.jpg");
       height: medium(284);
       grid-column: 2;
-      grid-row: 1/16 ;
+      // grid-row: 1/16;
+      grid-row: 1/11;
     }
   }
 
   .people {
     grid-column: 2;
-    grid-row: 16;
+    // grid-row: 16;
+    grid-row: 11;
   }
 
   .cooking {
@@ -120,7 +122,8 @@ section {
       background-image: url("../assets/tablet/cooking.jpg");
       height: medium(504);
       grid-column: 2;
-      grid-row: 17/45;
+      // grid-row: 17/45;
+      grid-row: 12/32;
     }
   }
   .thorn-tree {
@@ -131,11 +134,14 @@ section {
       background-image: url("../assets/tablet/thorn-tree.jpg");
       height: medium(505);
       grid-column: 1;
-      grid-row: 32/62;
+      // grid-row: 32/62;
+      grid-row: 23/42;
     }
   }
   .species {
-    grid-row: 62;
+    // grid-row: 62;
+    grid-column: 1;
+    grid-row: 42/49;
   }
   .bamboo {
     background-image: url("../assets/mobile/bamboo.jpg");
@@ -145,13 +151,15 @@ section {
       background-image: url("../assets/tablet/bamboo.jpg");
       height: medium(252);
       grid-column: 2;
-      grid-row: 46/59;
+      // grid-row: 46/59;
+      grid-row: 33/43;
     }
   }
 
   .bamboo-para {
     grid-column: 2;
-    grid-row: 60/64;
+    // grid-row: 60/64;
+    grid-row: 43/49;
   }
 
   .guide {
@@ -162,13 +170,15 @@ section {
       background-image: url("../assets/tablet/guide.jpg");
       height: medium(252);
       grid-column: 2;
-      grid-row: 64/75;
+      // grid-row: 64/75;
+      grid-row: 49/55;
     }
   }
 
   .guide-para {
     grid-column: 2;
-    grid-row: 72;
+    // grid-row: 72;
+    grid-row: 55;
   }
   .accomoadations {
     background-image: url("../assets/mobile/accomodationsjpg.jpg");
@@ -178,13 +188,15 @@ section {
       background-image: url("../assets/tablet/accomodations.jpg");
       height: medium(252);
       grid-column: 1;
-      grid-row: 63/72;
+      // grid-row: 63/72;
+      grid-row: 49/55;
     }
   }
 
   .accomodations-para {
     grid-column: 1;
-    grid-row: 72;
+    // grid-row: 72;
+    grid-row: 55;
   }
 
   .accomoadations-2 {
@@ -195,7 +207,8 @@ section {
       background-image: url("../assets/tablet/accomodations2.jpg");
       height: medium(83.66);
       grid-column: 2;
-      grid-row: 73/75;
+      // grid-row: 73/75;
+      grid-row: 56/59;
     }
   }
   .clinic {
@@ -205,12 +218,14 @@ section {
     @include media-md {
       height: medium(252);
       grid-column: 1;
-      grid-row: 73/82;
+      // grid-row: 73/82;
+      grid-row: 56/66;
     }
   }
   .clinic-para {
     grid-column: 1;
-    grid-row: 83;
+    // grid-row: 83;
+    grid-row: 66;
   }
   .clinic-2 {
     background-image: url("../assets/mobile/clinic2.jpg");
@@ -220,7 +235,8 @@ section {
       background-image: url("../assets/tablet/clinic2.jpg");
       height: medium(585);
       grid-column: 2;
-      grid-row: 86;
+      // grid-row: 86;
+      grid-row: 71/94;
     }
   }
   .clinic-3 {
@@ -231,7 +247,8 @@ section {
       background-image: url("../assets/tablet/clinic3.jpg");
       height: medium(252);
       grid-column: 1;
-      grid-row: 84;
+      // grid-row: 84;
+      grid-row: 67/77;
     }
   }
   .dining {
@@ -242,13 +259,15 @@ section {
       background-image: url("../assets/tablet/dining.jpg");
       height: medium(252);
       grid-column: 2;
-      grid-row: 77/85;
+      // grid-row: 77/85;
+      grid-row: 60/70;
     }
   }
 
   .dining-para {
-    grid-column:2 ;
-    grid-row: 85;
+    grid-column: 2;
+    // grid-row: 85;
+    grid-row: 70;
   }
   .frog {
     background-image: url("../assets/mobile/frog.jpg");
@@ -258,12 +277,14 @@ section {
       background-image: url("../assets/tablet/frog.jpg");
       height: medium(500);
       grid-column: 1;
-      grid-row: 86/105;
+      // grid-row: 86/105;
+      grid-row: 77/97;
     }
   }
   .species2 {
     grid-column: 1;
-    grid-row: 105;
+    // grid-row: 105;
+    grid-row: 97/100;
   }
   .snail {
     background-image: url("../assets/mobile/snail.jpg");
@@ -273,13 +294,15 @@ section {
       background-image: url("../assets/tablet/snail.jpg");
       height: medium(252);
       grid-column: 2;
-      grid-row: 106;
+      // grid-row: 106;
+      grid-row: 94/104;
     }
   }
-.snail-para {
-  grid-column: 2;
-  grid-row: 107;
-}
+  .snail-para {
+    grid-column: 2;
+    // grid-row: 107;
+    grid-row: 104/106;
+  }
 
   .monarch {
     background-image: url("../assets/mobile/monarch.jpg");
@@ -289,12 +312,31 @@ section {
       background-image: url("../assets/tablet/monarch.jpg");
       height: medium(252);
       grid-column: 1;
-      grid-row: 106;
+      // grid-row: 106;
+      grid-row: 100/110;
     }
   }
   .monarch-para {
     grid-column: 1;
-    grid-row: 107;
+    // grid-row: 107;
+    grid-row: 110;
+  }
+  .nest {
+    background-image: url("../assets/mobile/nest.jpg");
+    height: small(247);
+
+    @include media-md {
+      background-image: url("../assets/tablet/nest.jpg");
+      height: medium(247);
+      grid-column: 1;
+      // grid-row: 108/118;
+      grid-row: 111/120;
+    }
+  }
+  .nest-para {
+    grid-column: 1;
+    // grid-row: 118;
+    grid-row: 120;
   }
   .monkey {
     background-image: url("../assets/mobile/monkey.jpg");
@@ -303,11 +345,15 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/monkey.jpg");
       height: medium(211);
-      grid-row: 164;
+      grid-column: 2;
+      // grid-row: 108;
+      grid-row: 106/110;
     }
   }
   .monkey-para {
-    grid-row: 164;
+    grid-column: 2;
+    // grid-row: 109;
+    grid-row: 110;
   }
   .quito {
     background-image: url("../assets/mobile/quito.jpg");
@@ -316,11 +362,14 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/quito.jpg");
       height: medium(562);
-      grid-row: 164;
+      grid-column: 2;
+      // grid-row: 110;
+      grid-row: 111/133;
     }
   }
   .quito-para {
-    grid-row: 164;
+    grid-column: 2;
+    // grid-row: 111;
   }
   .lizard {
     background-image: url("../assets/mobile/lizard.jpg");
@@ -329,10 +378,14 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/lizards.jpg");
       height: medium(282);
-      grid-row: 164;
+      grid-column: 1;
+      // grid-row: 119;
+      grid-row: 121/132;
     }
   }
   .galapagos-para {
-    grid-area: 164;
+    grid-column: 1;
+    // grid-area: 120;
+    grid-row: 133;
   }
 }
