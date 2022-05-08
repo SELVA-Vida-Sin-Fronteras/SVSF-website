@@ -744,7 +744,7 @@ section {
 }
 
 .tour-2019 .species {
-  grid-row: 164;
+  grid-row: 62;
 }
 
 .tour-2019 .bamboo {
@@ -761,12 +761,9 @@ section {
   }
 }
 
-.tour-2019 .species2 {
-  grid-row: 164;
-}
-
 .tour-2019 .bamboo-para {
-  grid-row: 164;
+  grid-column: 2;
+  grid-row: 60/64;
 }
 
 .tour-2019 .guide {
@@ -778,12 +775,14 @@ section {
   .tour-2019 .guide {
     background-image: url("../assets/tablet/guide.jpg");
     height: 32.8125vw;
-    grid-row: 164;
+    grid-column: 2;
+    grid-row: 64/75;
   }
 }
 
 .tour-2019 .guide-para {
-  grid-row: 164;
+  grid-column: 2;
+  grid-row: 72;
 }
 
 .tour-2019 .accomoadations {
@@ -795,12 +794,14 @@ section {
   .tour-2019 .accomoadations {
     background-image: url("../assets/tablet/accomodations.jpg");
     height: 32.8125vw;
-    grid-row: 164;
+    grid-column: 1;
+    grid-row: 63/72;
   }
 }
 
 .tour-2019 .accomodations-para {
-  grid-row: 164;
+  grid-column: 1;
+  grid-row: 72;
 }
 
 .tour-2019 .accomoadations-2 {
@@ -812,7 +813,8 @@ section {
   .tour-2019 .accomoadations-2 {
     background-image: url("../assets/tablet/accomodations2.jpg");
     height: 10.89323vw;
-    grid-row: 164;
+    grid-column: 2;
+    grid-row: 73/75;
   }
 }
 
@@ -824,12 +826,14 @@ section {
 @media screen and (min-width: 600px) {
   .tour-2019 .clinic {
     height: 32.8125vw;
-    grid-row: 164;
+    grid-column: 1;
+    grid-row: 73/82;
   }
 }
 
 .tour-2019 .clinic-para {
-  grid-row: 164;
+  grid-column: 1;
+  grid-row: 83;
 }
 
 .tour-2019 .clinic-2 {
@@ -841,7 +845,8 @@ section {
   .tour-2019 .clinic-2 {
     background-image: url("../assets/tablet/clinic2.jpg");
     height: 76.17188vw;
-    grid-row: 164;
+    grid-column: 2;
+    grid-row: 86;
   }
 }
 
@@ -854,7 +859,8 @@ section {
   .tour-2019 .clinic-3 {
     background-image: url("../assets/tablet/clinic3.jpg");
     height: 32.8125vw;
-    grid-row: 164;
+    grid-column: 1;
+    grid-row: 84;
   }
 }
 
@@ -867,12 +873,14 @@ section {
   .tour-2019 .dining {
     background-image: url("../assets/tablet/dining.jpg");
     height: 32.8125vw;
-    grid-row: 164;
+    grid-column: 2;
+    grid-row: 77/85;
   }
 }
 
 .tour-2019 .dining-para {
-  grid-row: 164;
+  grid-column: 2;
+  grid-row: 85;
 }
 
 .tour-2019 .frog {

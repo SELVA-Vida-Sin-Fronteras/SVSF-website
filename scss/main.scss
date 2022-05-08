@@ -135,7 +135,7 @@ section {
     }
   }
   .species {
-    grid-row: 164;
+    grid-row: 62;
   }
   .bamboo {
     background-image: url("../assets/mobile/bamboo.jpg");
@@ -149,12 +149,9 @@ section {
     }
   }
 
-  .species2 {
-    grid-row: 164;
-  }
-
   .bamboo-para {
-    grid-row: 164;
+    grid-column: 2;
+    grid-row: 60/64;
   }
 
   .guide {
@@ -164,12 +161,14 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/guide.jpg");
       height: medium(252);
-      grid-row: 164;
+      grid-column: 2;
+      grid-row: 64/75;
     }
   }
 
   .guide-para {
-    grid-row: 164;
+    grid-column: 2;
+    grid-row: 72;
   }
   .accomoadations {
     background-image: url("../assets/mobile/accomodationsjpg.jpg");
@@ -178,12 +177,14 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/accomodations.jpg");
       height: medium(252);
-      grid-row: 164;
+      grid-column: 1;
+      grid-row: 63/72;
     }
   }
 
   .accomodations-para {
-    grid-row: 164;
+    grid-column: 1;
+    grid-row: 72;
   }
 
   .accomoadations-2 {
@@ -193,7 +194,8 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/accomodations2.jpg");
       height: medium(83.66);
-      grid-row: 164;
+      grid-column: 2;
+      grid-row: 73/75;
     }
   }
   .clinic {
@@ -202,11 +204,13 @@ section {
 
     @include media-md {
       height: medium(252);
-      grid-row: 164;
+      grid-column: 1;
+      grid-row: 73/82;
     }
   }
   .clinic-para {
-    grid-row: 164;
+    grid-column: 1;
+    grid-row: 83;
   }
   .clinic-2 {
     background-image: url("../assets/mobile/clinic2.jpg");
@@ -215,7 +219,8 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/clinic2.jpg");
       height: medium(585);
-      grid-row: 164;
+      grid-column: 2;
+      grid-row: 86;
     }
   }
   .clinic-3 {
@@ -225,7 +230,8 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/clinic3.jpg");
       height: medium(252);
-      grid-row: 164;
+      grid-column: 1;
+      grid-row: 84;
     }
   }
   .dining {
@@ -235,12 +241,14 @@ section {
     @include media-md {
       background-image: url("../assets/tablet/dining.jpg");
       height: medium(252);
-      grid-row: 164;
+      grid-column: 2;
+      grid-row: 77/85;
     }
   }
 
   .dining-para {
-    grid-row: 164;
+    grid-column:2 ;
+    grid-row: 85;
   }
   .frog {
     background-image: url("../assets/mobile/frog.jpg");
