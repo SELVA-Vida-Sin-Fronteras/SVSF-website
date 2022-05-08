@@ -1,0 +1,5 @@
+.quito-para {
+  @include media-lg {
+    grid-row: 130 !important; /* I don't know why but his has to be here */
+  }
+}
