@@ -375,14 +375,14 @@ people that prefer not to see them */
 /*------------------------------\
           PAGES - Home
 \------------------------------*/
-.home .mission {
+.home .hero {
   background-color: rgba(84, 129, 54, 0.5);
   padding: 0.375rem 3.8125rem 0.75rem 3.8125rem;
   overflow: scroll;
 }
 
 @media screen and (min-width: 600px) {
-  .home .mission {
+  .home .hero {
     display: flex;
     flex-direction: column;
     height: 25.6875rem;
@@ -392,7 +392,7 @@ people that prefer not to see them */
 }
 
 @media screen and (min-width: 1200px) {
-  .home .mission {
+  .home .hero {
     height: 27.1875rem;
     width: 41.75rem;
   }
@@ -469,6 +469,29 @@ people that prefer not to see them */
 \------------------------------*/
 body {
   position: absolute;
+}
+
+.hero {
+  background-color: rgba(84, 129, 54, 0.5);
+  padding: 0.375rem 3.8125rem 0.75rem 3.8125rem;
+  overflow: scroll;
+}
+
+@media screen and (min-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    height: 25.6875rem;
+    justify-content: center;
+    width: 25.6875rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 27.1875rem;
+    width: 41.75rem;
+  }
 }
 
 main {
@@ -584,18 +607,34 @@ main .hero-img {
 
 .journey .img-container {
   align-items: center;
-  background-image: none;
-  background-color: rgba(84, 129, 54, 0.84);
+  background-image: url("../assets/mobile/enrichment.jpg");
   display: flex;
   justify-content: center;
+  width: 100vw;
+}
+
+@media screen and (min-width: 600px) {
+  .journey .img-container {
+    background-image: url("../assets/tablet/enrichment.jpg");
+  }
 }
 
 .journey .hero {
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 section {
   margin: 0 6.4vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 {
+    display: grid;
+    grid-template-columns: 49.21875vw 49.21875vw;
+    column-gap: 0.6875rem;
+    grid-template-rows: repeat(164, meduim(25));
+  }
 }
 
 .tour-2019 .img-container {
@@ -604,8 +643,20 @@ section {
   width: 100vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .img-container {
+    width: 49.21875vw;
+  }
+}
+
 .tour-2019 p {
   margin: 0 6.4vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 p {
+    margin: 0 1.43229vw;
+  }
 }
 
 .tour-2019 p,
@@ -613,9 +664,35 @@ section {
   margin-bottom: 6.4vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 p,
+  .tour-2019 .img-container {
+    margin: 0;
+  }
+}
+
+.tour-2019 p {
+  margin: 0 6.4vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 p {
+    margin: 1.43229vw;
+  }
+}
+
 .tour-2019 .rivercruise {
   background-image: url("../assets/mobile/rivercruise.jpg");
   height: 179.08vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .rivercruise {
+    background-image: url("../assets/tablet/rivercruise.jpg");
+    height: 87.5vw;
+    grid-column: 1;
+    grid-row: 1/27;
+  }
 }
 
 .tour-2019 .woman-at-river {
@@ -623,9 +700,32 @@ section {
   height: 75.66667vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .woman-at-river {
+    background-image: url("../assets/tablet/woman-at-river.jpg");
+    height: 36.97917vw;
+    grid-column: 2;
+    grid-row: 1/11;
+  }
+}
+
+.tour-2019 .people {
+  grid-column: 2;
+  grid-row: 11;
+}
+
 .tour-2019 .cooking {
   background-image: url("../assets//mobile/cooking.jpg");
   height: 134.4vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .cooking {
+    background-image: url("../assets/tablet/cooking.jpg");
+    height: 65.625vw;
+    grid-column: 2;
+    grid-row: 12/32;
+  }
 }
 
 .tour-2019 .thorn-tree {
@@ -633,9 +733,37 @@ section {
   height: 134.744vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .thorn-tree {
+    background-image: url("../assets/tablet/thorn-tree.jpg");
+    height: 65.75521vw;
+    grid-column: 1;
+    grid-row: 23/42;
+  }
+}
+
+.tour-2019 .species {
+  grid-column: 1;
+  grid-row: 42/49;
+}
+
 .tour-2019 .bamboo {
   background-image: url("../assets/mobile/bamboo.jpg");
   height: 67.2vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .bamboo {
+    background-image: url("../assets/tablet/bamboo.jpg");
+    height: 32.8125vw;
+    grid-column: 2;
+    grid-row: 33/43;
+  }
+}
+
+.tour-2019 .bamboo-para {
+  grid-column: 2;
+  grid-row: 43/49;
 }
 
 .tour-2019 .guide {
@@ -643,9 +771,37 @@ section {
   height: 67.2vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .guide {
+    background-image: url("../assets/tablet/guide.jpg");
+    height: 32.8125vw;
+    grid-column: 2;
+    grid-row: 49/55;
+  }
+}
+
+.tour-2019 .guide-para {
+  grid-column: 2;
+  grid-row: 55;
+}
+
 .tour-2019 .accomoadations {
   background-image: url("../assets/mobile/accomodationsjpg.jpg");
   height: 66.12533vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .accomoadations {
+    background-image: url("../assets/tablet/accomodations.jpg");
+    height: 32.8125vw;
+    grid-column: 1;
+    grid-row: 49/55;
+  }
+}
+
+.tour-2019 .accomodations-para {
+  grid-column: 1;
+  grid-row: 55;
 }
 
 .tour-2019 .accomoadations-2 {
@@ -653,9 +809,31 @@ section {
   height: 22.30933vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .accomoadations-2 {
+    background-image: url("../assets/tablet/accomodations2.jpg");
+    height: 10.89323vw;
+    grid-column: 2;
+    grid-row: 56/59;
+  }
+}
+
 .tour-2019 .clinic {
   background-image: url("../assets/mobile/clinic1.jpg");
   height: 67.2vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .clinic {
+    height: 32.8125vw;
+    grid-column: 1;
+    grid-row: 56/66;
+  }
+}
+
+.tour-2019 .clinic-para {
+  grid-column: 1;
+  grid-row: 66;
 }
 
 .tour-2019 .clinic-2 {
@@ -663,9 +841,27 @@ section {
   height: 156vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .clinic-2 {
+    background-image: url("../assets/tablet/clinic2.jpg");
+    height: 76.17188vw;
+    grid-column: 2;
+    grid-row: 71/94;
+  }
+}
+
 .tour-2019 .clinic-3 {
   background-image: url("../assets/mobile/clinic3.jpg");
   height: 67.2vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .clinic-3 {
+    background-image: url("../assets/tablet/clinic3.jpg");
+    height: 32.8125vw;
+    grid-column: 1;
+    grid-row: 67/77;
+  }
 }
 
 .tour-2019 .dining {
@@ -673,9 +869,37 @@ section {
   height: 67.2vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .dining {
+    background-image: url("../assets/tablet/dining.jpg");
+    height: 32.8125vw;
+    grid-column: 2;
+    grid-row: 60/70;
+  }
+}
+
+.tour-2019 .dining-para {
+  grid-column: 2;
+  grid-row: 70;
+}
+
 .tour-2019 .frog {
   background-image: url("../assets/mobile/frog.jpg");
   height: 133.33333vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .frog {
+    background-image: url("../assets/tablet/frog.jpg");
+    height: 65.10417vw;
+    grid-column: 1;
+    grid-row: 77/97;
+  }
+}
+
+.tour-2019 .species2 {
+  grid-column: 1;
+  grid-row: 97/100;
 }
 
 .tour-2019 .snail {
@@ -683,9 +907,56 @@ section {
   height: 66.66667vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .snail {
+    background-image: url("../assets/tablet/snail.jpg");
+    height: 32.8125vw;
+    grid-column: 2;
+    grid-row: 94/104;
+  }
+}
+
+.tour-2019 .snail-para {
+  grid-column: 2;
+  grid-row: 104/106;
+}
+
 .tour-2019 .monarch {
   background-image: url("../assets/mobile/monarch.jpg");
   height: 66.66667vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .monarch {
+    background-image: url("../assets/tablet/monarch.jpg");
+    height: 32.8125vw;
+    grid-column: 1;
+    grid-row: 100/110;
+  }
+}
+
+.tour-2019 .monarch-para {
+  grid-column: 1;
+  grid-row: 110;
+}
+
+.tour-2019 .nest {
+  background-image: url("../assets/mobile/nest.jpg");
+  height: 65.86667vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .nest {
+    background-image: url("../assets/tablet/nest.jpg");
+    height: 32.16146vw;
+    grid-column: 1;
+    grid-row: 111/120;
+  }
+}
+
+.tour-2019 .nest-para {
+  grid-column: 1;
+  grid-row: 120;
 }
 
 .tour-2019 .monkey {
@@ -693,13 +964,54 @@ section {
   height: 56.26667vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .monkey {
+    background-image: url("../assets/tablet/monkey.jpg");
+    height: 27.47396vw;
+    grid-column: 2;
+    grid-row: 106/110;
+  }
+}
+
+.tour-2019 .monkey-para {
+  grid-column: 2;
+  grid-row: 110;
+}
+
 .tour-2019 .quito {
   background-image: url("../assets/mobile/quito.jpg");
   height: 149.86667vw;
 }
 
+@media screen and (min-width: 600px) {
+  .tour-2019 .quito {
+    background-image: url("../assets/tablet/quito.jpg");
+    height: 73.17708vw;
+    grid-column: 2;
+    grid-row: 111/133;
+  }
+}
+
+.tour-2019 .quito-para {
+  grid-column: 2;
+}
+
 .tour-2019 .lizard {
   background-image: url("../assets/mobile/lizard.jpg");
   height: 75.2vw;
+}
+
+@media screen and (min-width: 600px) {
+  .tour-2019 .lizard {
+    background-image: url("../assets/tablet/lizards.jpg");
+    height: 36.71875vw;
+    grid-column: 1;
+    grid-row: 121/132;
+  }
+}
+
+.tour-2019 .galapagos-para {
+  grid-column: 1;
+  grid-row: 133;
 }
 /*# sourceMappingURL=main.css.map */
