@@ -1178,15 +1178,38 @@ section {
 .blog .img-container {
   align-items: center;
   background-image: url("../assets/mobile/Blog_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 100vw;
+}
+
+@media screen and (min-width: 600px) {
+  .blog .img-container {
+    background-image: url("../assets/tablet/Blog_1.jpg");
+  }
 }
 
 .blog .img-container h1 {
   max-width: 15.625rem;
   margin-bottom: 1.5625rem;
+}
+
+@media screen and (min-width: 600px) {
+  .blog .img-container h1 {
+    max-width: 25rem;
+    margin-bottom: 3.125rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .blog__post {
+    display: flex;
+    width: 100vw;
+  }
 }
 
 .blog__post__img {
@@ -1196,12 +1219,26 @@ section {
   width: 100vw;
 }
 
+@media screen and (min-width: 600px) {
+  .blog__post__img {
+    height: 50vw;
+    width: 50vw;
+  }
+}
+
 .blog__post__text {
-  padding: 2.5rem;
+  padding: 1.25rem;
   height: 100.8vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .blog__post__text {
+    height: 50vw;
+    width: 50vw;
+  }
 }
 
 .blog__post__text h2 {
@@ -1232,6 +1269,12 @@ section {
   background-image: url("../assets/mobile/nov-15.jpg");
 }
 
+@media screen and (min-width: 600px) {
+  .blog .nov-15-2021 {
+    flex-direction: row-reverse;
+  }
+}
+
 .blog .nov-2-2021 .blog__post__img {
   background-image: url("../assets/mobile/nov-2-2021.jpg");
 }
@@ -1240,11 +1283,23 @@ section {
   background-image: url("../assets/mobile/oct-27-2021.jpg");
 }
 
+@media screen and (min-width: 600px) {
+  .blog .oct-27-2021 {
+    flex-direction: row-reverse;
+  }
+}
+
 .blog .oct-26-2021 .blog__post__img {
-  background-image: url("../assets/mobile/oct-26-2021.jpg");
+  background-image: url("../assets/tablet/oct-26-2021.jpg");
 }
 
 .blog .may-5-2021 .blog__post__img {
   background-image: url("../assets/mobile/may-5-2021.jpg");
+}
+
+@media screen and (min-width: 600px) {
+  .blog .may-5-2021 {
+    flex-direction: row-reverse;
+  }
 }
 /*# sourceMappingURL=main.css.map */
