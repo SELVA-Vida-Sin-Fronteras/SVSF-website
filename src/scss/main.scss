@@ -44,6 +44,10 @@
       background-image: url("../assets/tablet/Blog_1.jpg");
     }
 
+    @include media-lg {
+      height: large(600);
+    }
+
     h1 {
       max-width: rem(250);
       margin-bottom: rem(25);
@@ -61,6 +65,11 @@
       display: flex;
       width: 100vw;
     }
+
+    @include media-lg {
+      width: 70vw;
+      margin: auto;
+    }
    
 
     &__img {
@@ -73,6 +82,11 @@
         width: 50vw;
         height: medium(378);
         overflow: hidden;
+      }
+
+      @include media-lg {
+        height: large(400);
+        width: 35vw;
       }
 
     }
@@ -89,6 +103,12 @@
       @include media-md {
         height: medium(378);
         width: 50vw;
+      }
+
+      @include media-lg {
+        height: large(400);
+        padding: large(100);
+        width: 35vw;
       }
 
 
