@@ -1161,16 +1161,6 @@ section {
   grid-row: 132;
 }
 
-@media screen and (min-width: 1200px) {
-  .quito-para {
-    grid-row: 130 !important;
-    /* I don't know why but his has to be here */
-  }
-}
-
-/*------------------------------\
-            TESTING
-\------------------------------*/
 /*------------------------------\
       PAGES - Blog
 \------------------------------*/
@@ -1338,4 +1328,15 @@ section {
     flex-direction: row-reverse;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .quito-para {
+    grid-row: 130 !important;
+    /* I don't know why but his has to be here */
+  }
+}
+
+/*------------------------------\
+            TESTING
+\------------------------------*/
 /*# sourceMappingURL=main.css.map */
