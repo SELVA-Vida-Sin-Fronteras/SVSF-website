@@ -305,7 +305,7 @@ people that prefer not to see them */
   max-width: 50rem;
 }
 
-.blog-post nav {
+.blog-post .nav {
   text-align: center;
 }
 
