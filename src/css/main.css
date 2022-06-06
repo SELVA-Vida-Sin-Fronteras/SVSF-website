@@ -134,6 +134,10 @@ people that prefer not to see them */
   font-weight: 700;
 }
 
+.text--italic {
+  font-style: italic;
+}
+
 .hamburger-menu {
   cursor: pointer;
   display: block;
@@ -277,6 +281,32 @@ people that prefer not to see them */
   background-color: transparent;
   font-size: 1.25rem;
   padding: 0.875rem 1rem;
+}
+
+/*------------------------------\
+      COMPONENTS - Blog Post
+\------------------------------*/
+.blog-post {
+  background-color: rgba(43, 43, 43, 0.8);
+  padding: 2.5rem 1.5rem;
+}
+
+.blog-post .elem {
+  margin-top: 2.5rem;
+}
+
+.blog-post img {
+  margin: auto;
+  width: 80vw;
+}
+
+.blog-post .margin {
+  margin: auto;
+  max-width: 50rem;
+}
+
+.blog-post nav {
+  text-align: center;
 }
 
 /*------------------------------\

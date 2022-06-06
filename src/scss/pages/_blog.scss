@@ -1,0 +1,160 @@
+/*------------------------------\
+      PAGES - Blog
+\------------------------------*/
+
+.blog {
+    background-color: $main-bg-clr;
+    .img-container {
+      align-items: center;
+      background-image: url("../assets/mobile/Blog_1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 100vw;
+  
+      @include media-md {
+        background-image: url("../assets/tablet/Blog_1.jpg");
+      }
+  
+      @include media-lg {
+        height: large(600);
+      }
+  
+      h1 {
+        max-width: rem(250);
+        margin-bottom: rem(25);
+  
+        @include media-md {
+          max-width: rem(400);
+          margin-bottom: rem(50);
+        }
+      }
+    }
+  
+    &__post {
+  
+      @include media-md {
+        display: flex;
+        width: 100vw;
+      }
+  
+      @include media-lg {
+        width: 70vw;
+        margin: auto;
+      }
+     
+  
+      &__img {
+        height: small(284);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+  
+        @include media-md {
+          width: 50vw;
+          height: medium(378);
+          overflow: hidden;
+        }
+  
+        @include media-lg {
+          height: large(400);
+          width: 35vw;
+        }
+  
+      }
+  
+      
+  
+      &__text {
+        padding: rem(20);
+        height: small(378);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+        @include media-md {
+          height: medium(378);
+          width: 50vw;
+        }
+  
+        @include media-lg {
+          height: large(400);
+          padding: large(100);
+          width: 35vw;
+        }
+  
+  
+  
+        h2 {
+          margin-bottom: rem(16);
+        }
+  
+        h3 {
+          margin-bottom: rem(16);
+        }
+  
+        cite {
+          display: block;
+          margin-top: rem(28);
+        }
+  
+        a {
+          display: block;
+          margin-top: rem(18);
+          text-decoration: underline;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .nov-22-2021 {
+      .blog__post__img {
+        background-image: url("../assets/mobile/blog-img-nov-22.jpg");
+      }
+    }
+  
+    .nov-15-2021 {
+      .blog__post__img {
+        background-image: url("../assets/mobile/nov-15.jpg");
+      }
+  
+      @include media-md {
+        flex-direction: row-reverse;
+      }
+    }
+    .nov-2-2021 {
+      .blog__post__img {
+        background-image: url("../assets/mobile/nov-2-2021.jpg");
+      }
+    }
+    .oct-27-2021 {
+      .blog__post__img {
+        background-image: url("../assets/mobile/oct-27-2021.jpg");
+      }
+  
+      @include media-md {
+        flex-direction: row-reverse;
+      }
+    }
+    .oct-26-2021 {
+      .blog__post__img {
+        background-image: url("../assets/tablet/oct-26-2021.jpg");
+      }
+    }
+    .oct-26-2021 {
+      .blog__post__img {
+        background-image: url("../assets/mobile/oct-26-2021.jpg");
+      }
+    }
+    .may-5-2021 {
+      .blog__post__img {
+        background-image: url("../assets/mobile/may-5-2021.jpg");
+      }
+  
+      @include media-md {
+        flex-direction: row-reverse;
+      }
+    }
+  }

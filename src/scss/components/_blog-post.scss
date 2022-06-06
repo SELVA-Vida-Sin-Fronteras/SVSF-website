@@ -1,0 +1,28 @@
+/*------------------------------\
+      COMPONENTS - Blog Post
+\------------------------------*/
+
+.blog-post {
+    background-color: $main-bg-clr;
+  
+    padding: rem(40) rem(24);
+  
+    .elem {
+      margin-top: rem(40);
+    }
+  
+    img {
+      margin: auto;
+      width: 80vw;
+    }
+  
+    .margin {
+      margin: auto;
+      max-width: rem(800);
+    }
+
+    nav {
+        text-align: center;
+    }
+  }
+  
