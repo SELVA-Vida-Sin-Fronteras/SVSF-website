@@ -18,6 +18,7 @@
 @import "pages/who-we-are";
 @import "pages/journey";
 @import "pages/blog";
+@import "pages/take-action";
 
 @import "shame/grid-hack";
 
@@ -25,3 +26,66 @@
             TESTING
 \------------------------------*/
 
+
+
+/*------------------------------\
+    PAGES - Call to Action
+\------------------------------*/
+.cta {
+    background-color: $main-bg-clr;
+  
+    .hero {
+      align-items: center;
+      background-image: url('../assets/mobile/Arelio_take_action-mobile.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      height: 75vw;
+      justify-content: center;
+      margin: auto;
+      width: 100vw;
+      
+
+      @include media-md {
+        background-image: url('../assets/tablet/Arelio_take-action-tablet.jpg');
+      }
+
+      @include media-lg {
+        background-image: url('../assets/web/Arelio_take-action.jpg');
+        height: 40vw;
+        width: 40vw;
+      }
+    }
+
+    .title {
+        background-color: $mission-bg-clr;
+        padding: small(8);
+        
+    }
+  
+    .cta-section {
+      margin: small(24);
+      text-align: center;
+  
+      @include media-md {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: medium(24);
+      }
+  
+      h2 {
+        font-size: rem(30);
+        line-height: rem(60);
+      }
+  
+      input, .btn {
+        display: block;
+        margin: small(16) auto;
+      }
+  
+      .btn {
+        background-color: $btn-bg-clr;
+        color: white;
+      }
+    }
+  }

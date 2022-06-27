@@ -1369,4 +1369,69 @@ main .hero-img {
 /*------------------------------\
             TESTING
 \------------------------------*/
+/*------------------------------\
+    PAGES - Call to Action
+\------------------------------*/
+.cta {
+  background-color: rgba(43, 43, 43, 0.8);
+}
+
+.cta .hero {
+  align-items: center;
+  background-image: url("../assets/mobile/Arelio_take_action-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 75vw;
+  justify-content: center;
+  margin: auto;
+  width: 100vw;
+}
+
+@media screen and (min-width: 600px) {
+  .cta .hero {
+    background-image: url("../assets/tablet/Arelio_take-action-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cta .hero {
+    background-image: url("../assets/web/Arelio_take-action.jpg");
+    height: 40vw;
+    width: 40vw;
+  }
+}
+
+.cta .title {
+  background-color: rgba(84, 129, 54, 0.84);
+  padding: 2.13333vw;
+}
+
+.cta .cta-section {
+  margin: 6.4vw;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .cta .cta-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 3.125vw;
+  }
+}
+
+.cta .cta-section h2 {
+  font-size: 1.875rem;
+  line-height: 3.75rem;
+}
+
+.cta .cta-section input, .cta .cta-section .btn {
+  display: block;
+  margin: 4.26667vw auto;
+}
+
+.cta .cta-section .btn {
+  background-color: rgba(21, 117, 59, 0.75);
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
