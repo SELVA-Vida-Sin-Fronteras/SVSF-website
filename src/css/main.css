@@ -255,9 +255,11 @@ people that prefer not to see them */
 }
 
 .btn {
+  border: none;
   display: block;
   font-size: 1.25rem;
   margin-right: 0.3125rem;
+  outline: none;
   padding: 0.875rem 1rem;
   text-align: center;
   text-transform: uppercase;
@@ -270,6 +272,7 @@ people that prefer not to see them */
 }
 
 .btn--action {
+  color: white;
   background-color: rgba(21, 117, 59, 0.75);
 }
 
@@ -322,7 +325,7 @@ people that prefer not to see them */
   z-index: 100;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .header {
     padding: 4.16667vw;
     height: 16.27604vw;
@@ -361,7 +364,7 @@ people that prefer not to see them */
   width: 2.625rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .header .logo-container img {
     width: 4.5rem;
   }
@@ -371,7 +374,7 @@ people that prefer not to see them */
   max-width: 10.9375rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .header .logo-container .text {
     font-size: 1.5rem;
     line-height: 2.25rem;
@@ -411,7 +414,7 @@ people that prefer not to see them */
   overflow: scroll;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .home .hero {
     display: flex;
     flex-direction: column;
@@ -455,7 +458,7 @@ people that prefer not to see them */
   text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .home .action-card {
     height: 25.8125rem;
     margin: auto;
@@ -507,7 +510,7 @@ body {
   overflow: scroll;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -532,7 +535,7 @@ main {
   position: relative;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   main {
     margin-top: 16.27604vw;
   }
@@ -565,7 +568,7 @@ main .hero-img {
   width: 100vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .img-container {
     align-items: center;
     background-image: url("../assets/tablet/hero-landing-tablet.jpg");
@@ -595,7 +598,7 @@ main .hero-img {
   background-image: url("../assets/mobile/who-we-are.jpg");
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .who-we-are .img-container {
     background-image: url("../assets/tablet/who-we-are.jpg");
   }
@@ -611,7 +614,7 @@ main .hero-img {
   margin: 6.4vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .who-we-are .margin {
     margin: 5.20833vw;
   }
@@ -643,7 +646,7 @@ main .hero-img {
   width: 100vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .img-container {
     background-image: url("../assets/tablet/enrichment.jpg");
   }
@@ -658,7 +661,7 @@ main .hero-img {
   margin: 0 6.4vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 {
     display: grid;
     grid-template-columns: 49.21875vw 49.21875vw;
@@ -680,7 +683,7 @@ main .hero-img {
   width: 100vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .img-container {
     width: 49.21875vw;
   }
@@ -702,7 +705,7 @@ main .hero-img {
   margin: 0 6.4vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 p {
     margin: 0 1.43229vw;
   }
@@ -713,7 +716,7 @@ main .hero-img {
   margin-bottom: 6.4vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 p,
   .journey .tour-2019 .img-container {
     margin: 0;
@@ -724,7 +727,7 @@ main .hero-img {
   margin: 0 6.4vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 p {
     margin: 1.43229vw;
   }
@@ -735,7 +738,7 @@ main .hero-img {
   height: 179.08vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .rivercruise {
     background-image: url("../assets/tablet/rivercruise.jpg");
     height: 87.5vw;
@@ -756,7 +759,7 @@ main .hero-img {
   height: 75.66667vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .woman-at-river {
     background-image: url("../assets/tablet/woman-at-river.jpg");
     height: 36.97917vw;
@@ -782,7 +785,7 @@ main .hero-img {
   height: 134.4vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .cooking {
     background-image: url("../assets/tablet/cooking.jpg");
     height: 65.625vw;
@@ -803,7 +806,7 @@ main .hero-img {
   height: 134.744vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .thorn-tree {
     background-image: url("../assets/tablet/thorn-tree.jpg");
     height: 65.75521vw;
@@ -829,7 +832,7 @@ main .hero-img {
   height: 67.2vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .bamboo {
     background-image: url("../assets/tablet/bamboo.jpg");
     height: 32.8125vw;
@@ -854,7 +857,7 @@ main .hero-img {
   height: 67.2vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .guide {
     background-image: url("../assets/tablet/guide.jpg");
     height: 32.8125vw;
@@ -880,7 +883,7 @@ main .hero-img {
   height: 66.12533vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .accomoadations {
     background-image: url("../assets/tablet/accomodations.jpg");
     height: 32.8125vw;
@@ -906,7 +909,7 @@ main .hero-img {
   height: 22.30933vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .accomoadations-2 {
     background-image: url("../assets/tablet/accomodations2.jpg");
     height: 10.89323vw;
@@ -927,7 +930,7 @@ main .hero-img {
   height: 67.2vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .clinic {
     background-image: url("../assets/tablet/clinic1.jpg");
     height: 32.8125vw;
@@ -953,7 +956,7 @@ main .hero-img {
   height: 156vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .clinic-2 {
     background-image: url("../assets/tablet/clinic2.jpg");
     height: 76.17188vw;
@@ -974,7 +977,7 @@ main .hero-img {
   height: 67.2vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .clinic-3 {
     background-image: url("../assets/tablet/clinic3.jpg");
     height: 32.8125vw;
@@ -995,7 +998,7 @@ main .hero-img {
   height: 67.2vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .dining {
     background-image: url("../assets/tablet/dining.jpg");
     height: 32.8125vw;
@@ -1021,7 +1024,7 @@ main .hero-img {
   height: 133.33333vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .frog {
     background-image: url("../assets/tablet/frog.jpg");
     height: 65.10417vw;
@@ -1047,7 +1050,7 @@ main .hero-img {
   height: 66.66667vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .snail {
     background-image: url("../assets/tablet/snail.jpg");
     height: 32.8125vw;
@@ -1073,7 +1076,7 @@ main .hero-img {
   height: 66.66667vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .monarch {
     background-image: url("../assets/tablet/monarch.jpg");
     height: 32.8125vw;
@@ -1099,7 +1102,7 @@ main .hero-img {
   height: 65.86667vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .nest {
     background-image: url("../assets/tablet/nest.jpg");
     height: 32.16146vw;
@@ -1118,7 +1121,7 @@ main .hero-img {
   height: 56.26667vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .monkey {
     background-image: url("../assets/tablet/monkey.jpg");
     height: 27.47396vw;
@@ -1144,7 +1147,7 @@ main .hero-img {
   height: 149.86667vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .quito {
     background-image: url("../assets/tablet/quito.jpg");
     height: 73.17708vw;
@@ -1170,7 +1173,7 @@ main .hero-img {
   height: 75.2vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .journey .tour-2019 .lizard {
     background-image: url("../assets/tablet/lizards.jpg");
     height: 36.71875vw;
@@ -1210,7 +1213,7 @@ main .hero-img {
   width: 100vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .blog .img-container {
     background-image: url("../assets/tablet/Blog_1.jpg");
   }
@@ -1227,14 +1230,14 @@ main .hero-img {
   margin-bottom: 1.5625rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .blog .img-container h1 {
     max-width: 25rem;
     margin-bottom: 3.125rem;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .blog__post {
     display: flex;
     width: 100vw;
@@ -1255,7 +1258,7 @@ main .hero-img {
   width: 100vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .blog__post__img {
     width: 50vw;
     height: 49.21875vw;
@@ -1278,7 +1281,7 @@ main .hero-img {
   justify-content: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .blog__post__text {
     height: 49.21875vw;
     width: 50vw;
@@ -1321,7 +1324,7 @@ main .hero-img {
   background-image: url("../assets/mobile/nov-15.jpg");
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .blog .nov-15-2021 {
     flex-direction: row-reverse;
   }
@@ -1335,7 +1338,7 @@ main .hero-img {
   background-image: url("../assets/mobile/oct-27-2021.jpg");
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .blog .oct-27-2021 {
     flex-direction: row-reverse;
   }
@@ -1353,7 +1356,7 @@ main .hero-img {
   background-image: url("../assets/mobile/may-5-2021.jpg");
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .blog .may-5-2021 {
     flex-direction: row-reverse;
   }
@@ -1385,10 +1388,9 @@ main .hero-img {
   height: 75vw;
   justify-content: center;
   margin: auto;
-  width: 100vw;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .cta .hero {
     background-image: url("../assets/tablet/Arelio_take-action-tablet.jpg");
   }
@@ -1405,19 +1407,28 @@ main .hero-img {
 .cta .title {
   background-color: rgba(84, 129, 54, 0.84);
   padding: 2.13333vw;
-}
-
-.cta .cta-section {
-  margin: 6.4vw;
   text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+.cta .cta-section {
+  margin: 6.4vw auto;
+  max-width: 50rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
   .cta .cta-section {
+    column-gap: 1.5rem;
     display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 3.125vw;
+    grid-template-columns: 1fr 1fr;
   }
+}
+
+.cta .cta-section section {
+  border: 4px solid white;
+  max-width: 23.4375rem;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
 }
 
 .cta .cta-section h2 {
@@ -1427,11 +1438,6 @@ main .hero-img {
 
 .cta .cta-section input, .cta .cta-section .btn {
   display: block;
-  margin: 4.26667vw auto;
-}
-
-.cta .cta-section .btn {
-  background-color: rgba(21, 117, 59, 0.75);
-  color: white;
+  margin: 1.5rem auto;
 }
 /*# sourceMappingURL=main.css.map */

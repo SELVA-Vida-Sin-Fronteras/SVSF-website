@@ -43,7 +43,6 @@
       height: 75vw;
       justify-content: center;
       margin: auto;
-      width: 100vw;
       
 
       @include media-md {
@@ -60,17 +59,25 @@
     .title {
         background-color: $mission-bg-clr;
         padding: small(8);
-        
+        text-align: center;
     }
   
     .cta-section {
-      margin: small(24);
+      margin: small(24) auto;
+      max-width: rem(800);
       text-align: center;
   
       @include media-md {
+        column-gap: rem(24);
         display: grid;
-        grid-template-columns: auto auto;
-        column-gap: medium(24);
+        grid-template-columns: 1fr 1fr;
+      }
+
+      section {
+        border: 4px solid white;
+        max-width: rem(375);
+        margin: rem(24) auto;
+        padding: rem(24);
       }
   
       h2 {
@@ -80,12 +87,8 @@
   
       input, .btn {
         display: block;
-        margin: small(16) auto;
+        margin: rem(24) auto;
       }
-  
-      .btn {
-        background-color: $btn-bg-clr;
-        color: white;
-      }
+
     }
   }

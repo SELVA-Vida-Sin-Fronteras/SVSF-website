@@ -1,8 +1,10 @@
 .btn {
     @extend %transition-ease;
+    border: none;
     display: block;
     font-size: rem(20);
     margin-right: rem(5);
+    outline: none;
     padding: rem(14) rem(16);
     text-align: center;
     text-transform: uppercase;
@@ -14,6 +16,7 @@
     }
   
     &--action {
+      color: white;
       background-color: $btn-bg-clr;
     }
 
