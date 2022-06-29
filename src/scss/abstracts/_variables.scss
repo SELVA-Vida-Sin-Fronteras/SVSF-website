@@ -13,6 +13,7 @@ $green: hsla(96, 41%, 36%, 1);
 $very-desaturated-green: hsla(96, 41%, 36%, .5);
 $gray: hsla(0, 0%, 44%, 1);
 $white: hsla(0, 0%, 100%, 1);
+$red: #ff3333;
 
 // Effects
 $highlight-clr: $bright-green;
@@ -25,3 +26,4 @@ $btn-bg-clr: $desaturated-dark-green;
 
 // Text Colors
 $main-txt-clr: $white;
+$error-txt-clr: $red;
